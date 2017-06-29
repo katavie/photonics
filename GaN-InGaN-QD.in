@@ -1,0 +1,205 @@
+! GaN-InGaN-QD.in
+! By: Katherine M. Huang
+! 06/29/2017
+!
+! 100nm x 100nm x 100nm GaN
+! x=0nm to x=50nm 10^19 cm^-3 p-type
+! x=50nm to x=100nm 10^19 cm^-13 n-type
+!
+! Spherical (radius = 5nm) In(0.2)Ga(0.8)N quantum dot
+! centered at (5, 5, 5)
+
+$numeric-control
+ simulation-dimension = 3
+ varshni-parameters-on = no ! temperature independent
+$end_numeric-control
+
+!****** OVERALL SIMULATION PARAMETERS **************************************!
+
+$simulation-dimension
+ dimension = 3
+ orientation = 1 1 1
+$end_simulation-dimension
+
+$global-parameters
+ lattice-temperature = 300d0 ! 300 K
+$end_global-parameters
+
+$simulation-flow-control
+ flow-scheme = 3 ! solve Poisson (but not Schrodinger) self-consistently
+ strain-calculation = no-strain
+$end_simulation-flow-control
+
+$domain-coordinates
+ domain-type = 1 1 1
+ x-coordinates = 0d0 100d0
+ y-coordinates = 0d0 100d0
+ z-coordinates = 0d0 100d0
+ pseudomorphic-on = GaN
+$end_domain-coordinates
+
+!****** END OVERALL SIMULATION PARAMETERS **********************************!
+
+
+!****** REGIONS AND CLUSTERS ***********************************************!
+
+$regions
+ ! p-type GaN
+ region-number = 1
+ base-geometry = cuboid
+ region-priority = 1
+ x-coordinates = 0d0 50d0
+ y-coordinates = 0d0 100d0
+ z-coordinates = 0d0 100d0
+
+ ! n-type GaN
+ region-number = 2
+ base-geometry = cuboid
+ region-priority = 1
+ x-coordinates = 50d0 100d0
+ y-coordinates = 0d0 100d0
+ z-coordinates = 0d0 100d0
+
+ ! spherical QD made from 2 semiellipsoidal regions, top and bottom
+ region-number = 3
+ base-geometry = semiellipsoid
+ region-priority = 2 ! priority 2 overrides 1
+ base-coordinates = 4d0 6d0   4d0 6d0  5d0 5d0 ! zmin=zmax
+ top-coordinates = 5d0 5d0 6d0
+
+ region-number = 4
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 4d0 6d0   4d0 6d0  5d0 5d0
+ top-coordinates = 5d0 5d0 4d0
+$end_regions
+
+$grid-specification
+ grid-type = 1 1 1
+ 
+ ! increasing meshing around QD
+ x-grid-lines = 0d0 3.5d0 4d0 5d0 6d0 6.5d0 10d0 50d0 100d0
+ x-nodes = 5 10 20 20 10 5 5 5
+ x-grid-factors = 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0
+
+ y-grid-lines = 0d0 3.5d0 4d0 5d0 6d0 6.5d0 10d0 50d0 100d0
+ y-nodes = 5 10 20 20 10 5 5 5
+ y-grid-factors = 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0
+
+ z-grid-lines = 0d0 3.5d0 4d0 5d0 6d0 6.5d0 10d0 50d0 100d0
+ z-nodes = 5 10 20 20 10 5 5 5
+ z-grid-factors = 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0
+$end_grid-specification
+
+$region-cluster
+ cluster-number = 1  region-numbers = 1 2 5 ! you always have 1 more region than you actually specified
+ cluster-number = 2  region-numbers = 3 4
+$end_region-cluster
+
+!****** END REGIONS AND CLUSTER ********************************************!
+
+
+!****** MATERIALS AND ALLOY PROFILES ***************************************!
+
+$material
+ material-number = 1
+ material-name = GaN
+ cluster-numbers = 1
+
+ material-number = 2
+ material-name = In(x)Ga(1-x)N
+ alloy-function = constant
+ cluster-numbers = 2
+$end_material
+
+$alloy-function
+ material-number = 2
+ function-name = constant
+ xalloy = 0.2d0 ! In(0.2)Ga(0.8)N
+$end_alloy-function
+
+!****** END MATERIALS AND ALLOY PROFILES ***********************************!
+
+
+!****** DOPING AND IMPURITIES **********************************************!
+
+$doping-function
+ doping-function-number = 1
+ impurity-number = 1
+ doping-concentration = 10d0 ! 10 * 10^18 cm^-13
+ only-region = 0d0 50d0   0d0 100d0   0d0 100d0 ! xmin xmax   ymin ymax   zmin zmax
+
+ doping-function-number = 2
+ impurity-number = 2
+ doping-concentration = 10d0
+ only-region = 50d0 100d0    0d0 100d0   0d0 100d0
+$end_doping-function
+
+$impurity-parameters
+ impurity-number = 1
+ impurity-type = n-type
+ number-of-energy-levels = 1
+ energy-levels-relative = -100.d0 ! all ionized
+ degeneracy-of-energy-levels = 2 ! 2 for n-type
+
+ impurity-number = 2
+ impurity-type = p-type
+ number-of-energy-levels = 1
+ energy-levels-relative = -100.d0
+ degeneracy-of-energy-levels = 4 ! 4 for p-type
+$end_impurity-parameters
+
+!****** END DOPING AND IMPURITIES ******************************************!
+
+
+!****** OUTPUT *************************************************************!
+
+$global-settings
+ output-directory = <name_of_input_file>
+$end_global-settings
+
+$output-bandstructure
+ destination-directory = band_structure/
+ conduction-band-numbers = 1
+ valence-band-numbers = 1
+ band-gap = yes
+$end_output-bandstructure
+
+$output-file-format
+ simulation-dimension     = 3
+ file-format              = AVS
+ VTK-XML                  = yes
+ VTK-legacy               = yes
+$end_output-file-format
+
+$output-section
+ section-number = 1
+ section-name = slice_along
+ section-type = x
+ y = 5d0
+ z = 5d0
+
+ section-number = 2
+ section-name = slice_along
+ section-type = y
+ x = 5d0
+ z = 5d0
+
+ section-number = 3
+ section-name = slice_along
+ section-type = xy
+ z = 5d0
+$end_output-section
+
+! optional
+$output-material
+ destination-directory = material_parameters/
+$end_output-material
+
+! optional
+$output-grid
+ grid-coordinate = 1 0 0
+ output-file = grid_x.dat
+$end_output-grid
+
+!****** END OUTPUT *********************************************************!
