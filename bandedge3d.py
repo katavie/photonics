@@ -1,46 +1,31 @@
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 
-'''
-this script parses x and z correctly 
-
-TODO:
-	parse y values correctly
-	pass file in as param
-'''
-
 x = [] # distance along x-axis (nm)
 y = [] # distance along y-axis (nm)
 z = [] # band energy (eV)
 
 with open('bandedge3d.fld') as f:
-	lines = list(f)
+	lines = iter(f)
 
-	lineIndex = 0
 	newLineNum = 0
-	dataIndex1 = 1 # refers to sections of bulk data in .fld
-	dataIndex2 = 1
 
-	while lineIndex < len(lines): # parse through all lines and populate lists
-
-		if str(lines[lineIndex])[:2] == ' \n' or str(lines[lineIndex])[:1] == '\n': # if line is space-newline or simply newline
-
+	for line in lines:
+		
+		# if line is newline or space-newline
+		if str(line)[:1] == '\n' or str(line)[:2] == ' \n':
 			newLineNum += 1
-			print(newLineNum)
 
-			# check subsquent lines
-			while str(lines[lineIndex + dataIndex1])[4:5] == '.': # if 4th char is decimal point
+		# parse x and y values
+		# if 5th char is '.'
+		if str(line)[4:5] == '.':
+			if newLineNum == 3:
+				x.append(str(line)[3:-1])
+			if newLineNum == 4:
+				y.append(str(line)[3:-1])
 
-				if newLineNum == 3: # 3rd space-newline/newline ends header, starts x-coordinate data
-					x.append(str(lines[lineIndex + dataIndex1][3:-1])) # remove spaces and \n
-
-				if newLineNum == 4:
-					y.append(str(lines[lineIndex + dataIndex1][3:-1]))
-				dataIndex1 += 1
-
-			if newLineNum == 6: # skip over 5, which starts z-coordinates
-				while str(lines[lineIndex + dataIndex2])[5:6] == '.' and lineIndex + dataIndex2 < len(lines) - 1:
-					z.append(str(lines[lineIndex + dataIndex2])[4:17])
-					dataIndex2 += 1
-
-		lineIndex += 1
+		# parse z values
+		# if 6th char is '.'
+		# skip 5th newline, which begins z positions
+		if str(line)[5:6] == '.' and newLineNum == 6:
+			z.append(str(line)[4:17])
