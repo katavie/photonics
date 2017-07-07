@@ -1,0 +1,335 @@
+! C5872A.in
+! By: Katherine M. Huang
+! 07/05/2017
+!
+! 490nm x 200nm x 200nm
+! 200nm cavity and 3 QD layers on PC slab template
+!
+! STRUCTURE:
+! TOP (x=490nm)
+!	90nm GaN cap							490nm
+!	InGaN QD/QW layer
+!	10nm GaN 								400nm
+!	InGaN QD/QW layer
+!	10nm GaN 								390nm
+!	InGaN QD/QW layer					
+!	60nm uid InGaN 							380nm
+!	20nm AlGaN								320nm
+!	200nm InGaN								300nm
+!	(100nm) n-doped LDD GaN template		100nm
+! BOTTOM (x=0nm)
+
+$numeric-control       
+ simulation-dimension = 3
+ varshni-parameters-on = no ! temperature independent
+$end_numeric-control
+
+!****** OVERALL SIMULATION PARAMETERS **************************************!
+
+$simulation-dimension       
+ dimension = 3
+ orientation = 1 1 1
+$end_simulation-dimension
+
+$global-parameters       
+ lattice-temperature = 300d0 ! 300 K
+$end_global-parameters
+
+$simulation-flow-control       
+ flow-scheme = 3 ! solve Poisson (but not Schrodinger) self-consistently
+ strain-calculation = no-strain
+$end_simulation-flow-control
+
+$domain-coordinates       
+ domain-type = 1 1 1
+ x-coordinates = 0d0 490d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+ pseudomorphic-on = GaN
+$end_domain-coordinates
+
+!****** END OVERALL SIMULATION PARAMETERS **********************************!
+
+
+!****** REGIONS AND CLUSTERS ***********************************************!
+
+$regions
+ ! n-doped LDD GaN template		0-100nm
+ region-number = 1
+ base-geometry = cuboid
+ region-priority = 1
+ x-coordinates = 0d0 100d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+ ! 200nm InGaN SSL				100-300nm
+ region-number = 2
+ base-geometry = cuboid
+ region-priority = 1
+ x-coordinates = 100d0 300d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+ ! 20nm AlGaN					300-320nm
+ region-number = 3
+ base-geometry = cuboid
+ region-priority = 1
+ x-coordinates = 300d0 320d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+ ! 60nm uid InGaN				320-380nm
+ region-number = 4
+ base-geometry = cuboid
+ region-priority = 1
+ x-coordinates = 320d0 380d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+
+
+ !****** InGaN QD/QW layer ~380nm *************************!
+
+ ! InGaN QD/QW layer			~380nm
+ ! fQW, height = 5nm			377.5-382.5nm
+ region-number = 5
+ base-geometry = cuboid
+ region-priority = 2 ! 2 overrides 1
+ x-coordinates = 377.5d0 382.5d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+ ! QD, radius = 2nm				382.5-386.5nm
+ ! sphere made from 2 semiellipsoidal regions, top and bottom
+ region-number = 6
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 382.5d0 386.5d0 98d0 102d0 100d0 100d0 ! zmin = zmax
+ top-coordinates = 384.5d0 100d0 98d0
+
+ region-number = 7
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 382.5d0 386.5d0 98d0 102d0 100d0 100d0 ! zmin = zmax
+ top-coordinates = 384.5d0 100d0 102d0
+
+ !****** end InGaN QD/QW layer ~380nm *********************!
+
+
+
+ ! 10nm GaN 					380-390nm
+ region-number = 8
+ base-geometry = cuboid
+ region-priority = 1
+ x-coordinates = 380d0 390d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+
+
+ !****** InGaN QD/QW layer ~390nm *************************!
+
+ ! InGaN QD/QW layer			~390nm
+ ! fQW, height = 5nm			387.5-392.5nm
+ region-number = 9
+ base-geometry = cuboid
+ region-priority = 2 ! 2 overrides 1
+ x-coordinates = 387.5d0 392.5d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+ ! QD, radius = 2nm				392.5-396.5nm
+ ! sphere made from 2 semiellipsoidal regions, top and bottom
+ region-number = 10
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 392.5d0 396.5d0 98d0 102d0 100d0 100d0 ! zmin = zmax
+ top-coordinates = 394.5d0 100d0 98d0
+
+ region-number = 11
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 392.5d0 396.5d0 98d0 102d0 100d0 100d0 ! zmin = zmax
+ top-coordinates = 394.5d0 100d0 102d0
+
+ !****** end InGaN QD/QW layer ~390nm *********************!
+
+
+
+ ! 10nm GaN 					390-400nm
+ region-number = 12
+ base-geometry = cuboid
+ region-priority = 1
+ x-coordinates = 390d0 400d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+
+
+ !****** InGaN QD/QW layer ~400nm *************************!
+
+ ! InGaN QD/QW layer			~400nm
+ ! fQW, height = 5nm			397.5-402.5nm
+ region-number = 13
+ base-geometry = cuboid
+ region-priority = 2 ! 2 overrides 1
+ x-coordinates = 397.5d0 402.5d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+ ! QD, radius = 2nm				402.5-406.5nm
+ ! sphere made from 2 semiellipsoidal regions, top and bottom
+ region-number = 14
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 402.5d0 406.5d0 98d0 102d0 100d0 100d0 ! zmin = zmax
+ top-coordinates = 404.5d0 100d0 98d0
+
+ region-number = 15
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 402.5d0 406.5d0 98d0 102d0 100d0 100d0 ! zmin = zmax
+ top-coordinates = 404.5d0 100d0 102d0
+
+ !****** end InGaN QD/QW layer ~400nm *********************!
+
+
+
+ ! 90nm GaN cap					400-490nm
+ region-number = 16
+ base-geometry = cuboid
+ region-priority = 1
+ x-coordinates = 400d0 490d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+$end_regions
+
+$region-cluster
+ ! correspond to materials
+ ! numbered along x-axis (low to high distance)
+
+ ! n-doped GaN
+ cluster-number = 1		region-numbers = 1
+
+ ! InGaN SSL and QD/QW layers
+ cluster-number = 2		region-numbers = 2 5 6 7 9 10 11 13 14 15
+
+ ! AlGaN
+ cluster-number = 3		region-numbers = 3
+
+ ! (uid) GaN; default
+ cluster-number = 4		region-numbers = 4 8 12 16 17 ! you always have 1 more region than specified, 17 is default
+$end_region-cluster
+
+$grid-specification
+ ! to analyze band structure, we'll take 1D slice along x-axis
+ ! so only increase meshing at areas of interest (QD/QW; y=100, z=100)
+
+ grid-type = 1 1 1
+
+ x-grid-lines = 0d0 90d0 100d0 110d0 290d0 300d0 310d0 317.5d0 320d0 322.5d0 377.5d0 380d0 382.5d0 384.50d0 386.5d0 387.5d0 390d0 392.5d0 394.5d0 396.5d0 397.5d0 400d0 402.5d0 404.5d0 406.5d0 490d0 ! 26 grid lines
+ x-nodes =         9    6     6     18    6     6     1       5     5       10      3     3      3        10      3       3     3        3      10       3       3     3       3       10      8      ! 25 node specifications  
+ x-grid-factors = 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 1d0 ! 25
+
+ y-grid-lines = 0d0 98d0 100d0 102d0 200d0
+ y-nodes = 10 4 4 10
+ y-grid-factors = 1d0 1d0 1d0 1d0
+
+ z-grid-lines = 0d0 98d0 100d0 102d0 200d0
+ z-nodes = 10 4 4 10
+ z-grid-factors = 1d0 1d0 1d0 1d0
+$end_grid-specification
+
+!****** END REGIONS AND CLUSTER ********************************************!
+
+
+!****** MATERIALS AND ALLOY PROFILES ***************************************!
+
+$material
+ ! n-doped LDD GaN
+ material-number = 1
+ material-name = GaN
+ cluster-numbers = 1
+
+ ! In(x)Ga(1-x)N
+ material-number = 2
+ material-name = In(x)Ga(1-x)N
+ alloy-function = constant
+ cluster-numbers = 2
+
+ ! AlGaN
+ material-number = 3
+ material-name = Al(x)Ga(1-x)N
+ alloy-function = constant
+ cluster-numbers = 3
+
+ ! (uid) GaN
+ material-number = 4
+ material-name = GaN
+ cluster-numbers = 4
+$end_material
+
+$alloy-function
+ material-number = 2
+ function-name = constant
+ xalloy = 0.2d0
+
+ material-number = 3
+ function-name = constant
+ xalloy = 0.2d0
+$end_alloy-function
+
+!****** END MATERIALS AND ALLOY PROFILES ***********************************!
+
+
+!****** DOPING AND IMPURITIES **********************************************!
+
+$doping-function
+ doping-function-number = 1
+ impurity-number = 1
+ doping-concentration = 10d0 ! 10 * 10^18 cm^-3
+ only-region = 0d0 100d0 0d0 200d0 0d0 200d0 ! xmin xmax etc
+$end_doping-function
+
+$impurity-parameters
+ impurity-number = 1
+ impurity-type = n-type
+ number-of-energy-levels = 1
+ energy-levels-relative = -100.d0 ! all ionized
+ degeneracy-of-energy-levels = 2 ! 2 for n-type
+$end_impurity-parameters
+
+!****** END DOPING AND IMPURITIES ******************************************!
+
+
+!****** OUTPUT *************************************************************!
+
+$global-settings       
+ output-directory = <name_of_input_file>
+$end_global-settings
+
+$output-material
+ destination-directory = material_parameters/
+$end_output-material
+
+$output-grid
+ grid-coordinate = 1 0 0
+ output-file = grid_x.dat
+$end_output-grid
+
+$output-bandstructure       
+ destination-directory = band_structure/
+ conduction-band-numbers = 1 2 3
+ valence-band-numbers = 1 2 3
+ band-gap = yes
+$end_output-bandstructure
+
+$output-section
+ section-number = 1
+ section-name = slice_along
+ section-type = x
+ y = 100d0
+ z = 100d0
+$end_output-section
+
+!****** END OUTPUT *********************************************************!

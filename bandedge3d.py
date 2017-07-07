@@ -5,6 +5,7 @@ x = [] # distance along x-axis (nm)
 y = [] # distance along y-axis (nm)
 z = [] # band energy (eV)
 
+# parse file
 with open('bandedge3d.fld') as f:
 	lines = iter(f)
 
@@ -29,3 +30,14 @@ with open('bandedge3d.fld') as f:
 		# skip 5th newline, which begins z positions
 		if str(line)[5:6] == '.' and newLineNum == 6:
 			z.append(str(line)[4:17])
+
+fig = plt.figure()
+ax1 = fig.add_subplot(111, projection='3d')
+
+ax1.scatter(x, y, z)
+
+ax1.set_xlabel('Distance along x-axis (nm)')
+ax1.set_ylabel('Distance along y-axis (nm)')
+ax1.set_zlabel('Band energy (eV)')
+
+plt.show()
