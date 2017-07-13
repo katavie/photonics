@@ -1,0 +1,224 @@
+$simulation-dimension
+ dimension = 3
+ orientation = 1 1 1
+$end_simulation-dimension
+
+$numeric-control
+ simulation-dimension = 3
+ varshni-parameters-on = yes
+ lattice-constants-temp-coeff-on = yes
+ zero-potential = no
+ nonlinear-poisson-cg-lin-eq-solv = cg
+ piezo-constants-zero = no
+ pyro-constants-zero = no
+
+!strain-residual = 1d-13
+$end_numeric-control
+
+$global-parameters
+ lattice-temperature = 300d0 ! Kelvin
+$end_global-parameters
+
+$simulation-flow-control
+ flow-scheme = 4
+ strain-calculation = strain-minimization-new
+$end_simulation-flow-control
+
+$strain-minimization-model
+ substrate-cluster-number = 1 ! sets strain of this cluster to 0
+ boundary-condition-x = periodic
+ boundary-condition-y = periodic
+ boundary-condition-z = periodic
+$end_strain-minimization-model
+
+$domain-coordinates
+ domain-type = 1 1 1
+ x-coordinates = 0d0 100d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+ growth-coordinate-axis = 1 0 0
+ pseudomorphic-on = GaN
+
+ hkil-z-direction = 1  0 -1  0
+ hkil-x-direction = 0  0  0  1
+$end_domain-coordinates
+
+!********************************
+! This is along [0001] direction: Ga-face polarity
+
+!   hkil-x-direction       =  1  0 -1  0                                    ! Miller-Bravais indices of x coordinate axis [ 1  0 -1  0]
+! ! hkil-y-direction       = -1  2 -1  0                                    ! Miller-Bravais indices of y coordinate axis [-1  2 -1  0]
+!   hkil-z-direction       =  0  0  0  1                                    ! Miller-Bravais indices of z coordinate axis [ 0  0  0  1]
+! ! Equivalent Bravais indices
+! ! hkl-x-direction-zb     = 1 0 0                                          ! Miller indices of x coordinate axis [1 0 0]
+! ! hkl-y-direction-zb     = 0 1 0                                          ! Miller indices of y coordinate axis [0 1 0]
+! ! hkl-z-direction-zb     = 0 0 1                                          ! Miller indices of z coordinate axis [0 0 1]
+!********************************
+
+!********************************
+! This is along [000-1] direction: N-face polarity
+
+!   hkil-x-direction       = -1  0  1  0  ! => -x                           ! Miller-Bravais indices of x coordinate axis [-1  0  1  0]
+! ! hkil-y-direction       = -1  2 -1  0                                    ! Miller-Bravais indices of y coordinate axis [-1  2 -1  0]
+!   hkil-z-direction       =  0  0  0 -1  ! => -z                           ! Miller-Bravais indices of z coordinate axis [ 0  0  0 -1]
+! ! Equivalent Bravais indices
+! ! hkl-x-direction-zb     = -1 0  0                                        ! Miller indices of x coordinate axis [1 0 0]
+! ! hkl-y-direction-zb     =  0 1  0                                        ! Miller indices of y coordinate axis [0 1 0]
+! ! hkl-z-direction-zb     =  0 0 -1                                        ! Miller indices of z coordinate axis [0 0 1]
+!********************************
+
+$regions
+ ! bulk GaN
+ region-number = 1
+ base-geometry = cuboid
+ region-priority = 1
+ x-coordinates = 0d0 100d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+ ! isolated QD; x=30-32nm
+ region-number = 2
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 30d0 32d0 99d0 101d0 100d0 100d0 ! zmin=zmax
+ top-coordinates = 31d0 100d0 99d0
+
+ region-number = 3
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 30d0 32d0 99d0 101d0 100d0 100d0 ! zmin=zmax
+ top-coordinates = 31d0 100d0 101d0
+
+ ! isolated fQW; x=50-52nm
+ region-number = 4
+ base-geometry = cuboid
+ region-priority = 2
+ x-coordinates = 50d0 52d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+ ! fQW in pair; x=70-72nm
+ region-number = 5
+ base-geometry = cuboid
+ region-priority = 2
+ x-coordinates = 70d0 72d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 200d0
+
+ ! QD in pair; x=72-74nm
+ region-number = 6
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 72d0 74d0 99d0 101d0 100d0 100d0 ! zmin=zmax
+ top-coordinates = 73d0 100d0 99d0
+
+ region-number = 7
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 72d0 74d0 99d0 101d0 100d0 100d0 ! zmin=zmax
+ top-coordinates = 73d0 100d0 101d0
+$end_regions
+
+$grid-specification
+ grid-type = 1 1 1
+
+!x-grid-lines = 0d0 30d0 31d0 32d0 50d0 51d0 52d0 70d0 72d0 73d0 74d0 100d0
+!x-nodes =         15   8    8    9    8    8    9    16   8    8    13
+!x-grid-lines =    1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0
+
+!x-grid-lines = 0d0 30d0 31d0 32d0 50d0 51d0 52d0 70d0 72d0 73d0 74d0 100d0
+!x-nodes =         15   8    8    9    8    8    9   16    8    8    13
+!x-grid-factors =  1d0  1d0  1d0  1d0  1d0  1d0  1d0 1d0   1d0  1d0  1d0
+ 
+ x-grid-lines = 0d0 28d0 30d0 31d0 32d0 34d0 48d0 50d0 51d0 52d0 54d0 68d0 70d0 72d0 73d0 74d0 76d0 100d0
+ x-nodes =         15   8    8    8    8    7    8    8    8    8    7    8   16    8    8    8    12
+ x-grid-factors =    1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0 1d0   1d0  1d0  1d0  1d0
+
+ y-grid-lines = 0d0 95d0 99d0 100d0 101d0 105d0 200d0
+ y-nodes =         5   5   10    10    5    5
+ y-grid-factors =  1d0  1d0  1d0   1d0   1d0   1d0
+
+ z-grid-lines = 0d0 95d0 99d0 100d0 101d0 105d0 200d0
+ z-nodes =         5   5   10    10    5    5
+ z-grid-factors =  1d0  1d0  1d0   1d0   1d0   1d0
+$end_grid-specification
+
+$region-cluster
+ ! bulk GaN
+ cluster-number = 1  region-numbers = 1
+
+ ! InGaN
+ cluster-number = 2  region-numbers = 2 3 4 5 6 7
+
+ ! default: GaN
+ cluster-number = 3  region-numbers = 8
+$end_region-cluster
+
+$material
+ material-number = 1
+ material-name = GaN
+ cluster-numbers = 1
+
+ material-number = 2
+ material-name = In(x)Ga(1-x)N
+ cluster-numbers = 2
+ alloy-function = constant
+
+ material-number = 3
+ material-name = GaN
+ cluster-numbers = 3
+$end_material
+
+$alloy-function
+ material-number = 2
+ function-name = constant
+ xalloy = 0.2d0
+$end_alloy-function
+
+$output-bandstructure
+ destination-directory = band_structure/
+ conduction-band-numbers = 1 ! Gamma
+ valence-band-numbers = 1 ! heavy hole
+ potential = yes
+ built-in-potential = yes
+ electric-field = yes
+ band-gap = yes
+$end_output-bandstructure
+
+$output-file-format
+ simulation-dimension     = 3
+ file-format              = AVS
+ VTK-XML                  = yes
+$end_output-file-format
+
+$output-densities
+ destination-directory = densities/
+ electrons = yes
+ holes = yes
+ charge-density = yes
+ piezo-electricity = yes
+$end_output-densities
+
+$output-strain
+ destination-directory = strain/
+ strain = yes
+ strain-simulation-system = yes
+ strain-crystal-system = yes
+ hydrostatic-strain = yes
+$end_output-strain
+
+$output-material
+ destination-directory = material_parameters/
+ lattice-constants = lattice_constants.dat
+ elastic-constants = elastic_constants.dat
+ piezoelectric-polarization = piezo_polarization.dat
+ spontaneous-polarization = pyro_polarization.dat
+$output-material
+
+$output-section       
+ section-number = 1
+ section-name = slice_along
+ section-type = x
+ z = 100d0
+ y = 100d0
+$end_output-section
