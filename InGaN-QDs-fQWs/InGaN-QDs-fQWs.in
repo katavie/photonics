@@ -36,11 +36,11 @@ $domain-coordinates
  x-coordinates = 0d0 100d0
  y-coordinates = 0d0 200d0
  z-coordinates = 0d0 200d0
- growth-coordinate-axis = 1 0 0
+ growth-coordinate-axis = 0 0 1
  pseudomorphic-on = GaN
 
- hkil-z-direction = 1  0 -1  0
- hkil-x-direction = 0  0  0  1
+ hkil-x-direction = 1  0 -1  0
+ hkil-z-direction = 0  0  0  1
 $end_domain-coordinates
 
 !********************************

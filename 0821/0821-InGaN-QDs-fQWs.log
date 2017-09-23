@@ -1,0 +1,496 @@
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Command line information
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  command line        = "C:\Program Files (x86)\nextnano\2015_08_19\nextnano3\Intel 64bit\nextnano3_Intel_64bit.exe"  -license "C:\Users\Hu Group\Documents\nextnano\License\license.txt" -inputfile "C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\0821-InGaN-QDs-fQWs.in" -outputdirectory "C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\"
+00:00:00  command name        = C:\Program Files (x86)\nextnano\2015_08_19\nextnano3\Intel 64bit\nextnano3_Intel_64bit.exe
+00:00:00  command argument  1 = -license
+00:00:00  command argument  2 = C:\Users\Hu Group\Documents\nextnano\License\license.txt
+00:00:00  command argument  3 = -inputfile
+00:00:00  command argument  4 = C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\0821-InGaN-QDs-fQWs.in
+00:00:00  command argument  5 = -outputdirectory
+00:00:00  command argument  6 = C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\
+00:00:00  number of command arguments =   6
+00:00:00  Reading in input file:      'C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\0821-InGaN-QDs-fQWs.in'
+00:00:00  Using the output directory: 'C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\'
+00:00:00  License file location:      'C:\Users\Hu Group\Documents\nextnano\License\license.txt'
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Start time ==> Date: 2016-09-17   Time: 5:04:26 (-0400)
+00:00:00   
+00:00:00  ANY USE OF THIS CODE CONSTITUTES ACCEPTANCE OF THE TERMS OF THE COPYRIGHT NOTICE.
+00:00:00  
+00:00:00  ===============================================================================
+00:00:00  COPYRIGHT NOTICE
+00:00:00  ===============================================================================
+00:00:00  
+00:00:00  The original nextnano3 code has been modified by nextnano GmbH, Germany.
+00:00:00  This modified code is proprietary software.
+00:00:00  Proprietary software is computer software licensed under exclusive legal right
+00:00:00  of the copyright holder.
+00:00:00  The licensee is given the right to use the software under certain conditions,
+00:00:00  but restricted from other uses, such as modification, further distribution,
+00:00:00  or reverse engineering.
+00:00:00  
+00:00:00  Copyright (c) 2012 - 2016, nextnano GmbH, Germany.
+00:00:00  All rights reserved.
+00:00:00  
+00:00:00  Redistribution and use in source and binary forms, with or without modification,
+00:00:00  are not permitted.
+00:00:00  
+00:00:00  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+00:00:00  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+00:00:00  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+00:00:00  IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY
+00:00:00  DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+00:00:00  (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+00:00:00  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+00:00:00  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+00:00:00  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+00:00:00  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+00:00:00  
+00:00:00  Please read the file 'copyright_nextnano3.txt' in your installation folder
+00:00:00  for further information about source code of third parties that is used
+00:00:00  in the nextnano3 code.
+00:00:00  
+00:00:00  ===============================================================================
+00:00:00  END OF COPYRIGHT NOTICE
+00:00:00  ===============================================================================
+00:00:00   
+00:00:00  -------------------------------------------------------------------------------
+00:00:00  nextnano3 - next generation 3D nano device simulator (1.9.0)
+00:00:00  -------------------------------------------------------------------------------
+00:00:00  Build type:                    Release
+00:00:00  Build date:                    2015-08-17
+00:00:00  Platform:                      Windows
+00:00:00  Architecture:                  64-bit
+00:00:00  Parallelization:               none
+00:00:00  Compiler:                      Intel(R) Visual Fortran Composer XE 2013 SP1, Version: 1400, Build date: 20131008
+00:00:00  Precompiled numerical library: MKL 11.0 Update 2
+00:00:00  For documentation and support please visit our website: http://www.nextnano.com/nextnano3
+00:00:00  -------------------------------------------------------------------------------
+00:00:00 
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Environment / System information
+00:00:00  ------------------------------------------------------------------------------
+00:00:00   Your operating system is 64-bit.
+00:00:00  Environment variable 'HOMEPATH' = \Users\Hu Group
+00:00:00  directory = \Users\
+00:00:00  Your working directory is:
+00:00:00 C:\Program Files (x86)\nextnano\2015_08_19\nextnano3\Intel 64bit
+00:00:00  Environment variable 'NEXTNANO' = 
+00:00:00  Environment variable 'OS' = Windows_NT
+00:00:00  Environment variable 'NUMBER_OF_PROCESSORS' = 8
+00:00:00  Environment variable 'MACHINE' = 
+00:00:00  Environment variable 'PROCESSOR_ARCHITECTURE' = AMD64
+00:00:00  Environment variable 'PROCESSOR_IDENTIFIER' = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+00:00:00  ------------------------------------------------------------------------------
+00:00:00 
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Reading in input file: 'C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\0821-InGaN-QDs-fQWs.in'
+00:00:00 
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Reading in database_nn3:   '../Syntax/database_nn3.in'
+00:00:00  ../Syntax/database_nn3.in: Build up input queue for all database_nn3 entries. (finished)
+00:00:00 
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Processing input file.
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Using debug-level =     0 (no debug information is printed out) (default)
+00:00:00  Stacksize for OpenMP: OMP_STACKSIZE =       67108864 bytes (default) =    64.000 MB (MiB) (default)
+00:00:00  Warnings are switched off.
+00:00:00  Performing a 3D simulation in (x,y,z) space.
+00:00:00  
+00:00:00  ---------------------------------------------------------------
+00:00:00  number of x-grid entries found in input file =            1
+00:00:00  number of y-grid entries found in input file =            1
+00:00:00  number of z-grid entries found in input file =            1
+00:00:00  ---------------------------------------------------------------
+00:00:00  
+00:00:00  ---------------------------------------------------------------
+00:00:00  number of nodes to create in x-direction =         37
+00:00:00  number of nodes to create in y-direction =         37
+00:00:00  number of nodes to create in z-direction =         88
+00:00:00  ---------------------------------------------------------------
+00:00:00  
+00:00:00  ---------------------------------------------------------------
+00:00:00  number of entries for  $region-cluster =            3
+00:00:00  ---------------------------------------------------------------
+00:00:00  
+00:00:00  Region cuboid processed:       112752 grid points
+00:00:00  Region semiellipsoid processed:          680 grid points
+00:00:00  Region cuboid processed:         9072 grid points
+00:00:00  Region semiellipsoid processed:          680 grid points
+00:00:00  Region semiellipsoid processed:          680 grid points
+00:00:00  Region cuboid processed:        12960 grid points
+00:00:00  Region semiellipsoid processed:          680 grid points
+00:00:00  no. of clusters                            =        3
+00:00:00  cluster     1: no. of material grid points =    88000
+00:00:00  cluster     2: no. of material grid points =    24752
+00:00:00  cluster     3: no. of material grid points =        0
+00:00:00  material-number #     1: GaN
+00:00:00  material-type     =      GaN-wz-default
+00:00:00  apply to clusters =            1
+00:00:00  material-number #     2: In(x)Ga(1-x)N
+00:00:00  material-type     =      In(x)Ga(1-x)N-wz-default
+00:00:00  apply to clusters =            2
+00:00:00  alloy function    = constant
+00:00:00  material-number #     3: GaN
+00:00:00  material-type     =      GaN-wz-default
+00:00:00  apply to clusters =            3
+00:00:00  The simulated structure contains at least one wurtzite material.
+00:00:00  Varshni parameters were switched on.
+00:00:00  I will use temperature dependent energy gaps.
+00:00:00  (temperature dependent conduction-band-energies)
+00:00:00  Varshni parameters were switched on.
+00:00:00  I will use temperature dependent energy gaps.
+00:00:00  (temperature dependent conduction-band-energies)
+00:00:00  Piezoelectric constants as specified in database or input file.
+00:00:00  Pyroelectric constants as specified in database or input file.
+00:00:00  wurtzite crystal orientation (Bravais-Miller indices as specified in input file or database)
+00:00:00  hkil-x-direction   =      1.000000     0.000000    -1.000000     0.000000
+00:00:00  hkil-z-direction   =      0.000000     0.000000     0.000000     1.000000
+00:00:00 
+00:00:00  wurtzite crystal orientation (Bravais-Miller indices [hkil] are cooked down to 3 lattice axes used [hkl].)
+00:00:00  hkl-x-direction    =      2.000000     1.000000     0.000000
+00:00:00  hkl-z-direction    =      0.000000     0.000000     1.000000
+00:00:00  3rd direction      =      0.447214    -0.894427     0.000000
+00:00:00  3rd direction corresponds to (hkil) plane     = (     0.447214    -0.894427     0.447214     0.000000)
+00:00:00  $domain-coordinates: Getting lattice constants for substrate material = GaAs
+00:00:00   substrate lattice constants for material      1 =     0.56532500    0.56532500    0.56532500 [nm]
+00:00:00   substrate lattice constants for material      2 =     0.56532500    0.56532500    0.56532500 [nm]
+00:00:00   substrate lattice constants for material      3 =     0.56532500    0.56532500    0.56532500 [nm]
+00:00:00  c/a ratio in wurtzite =      1.000000000 (ideal ratio =      1.632993162).
+00:00:00  3rd direction corresponds to [hkil] direction = [     0.447214    -0.894427     0.447214     0.000000]
+00:00:00  angle between hkil directions   =     90.000000000000 °    (substrate)
+00:00:00  angle between hkil_1 and [0001] =     90.000000000000 °    (substrate)
+00:00:00  angle between hkil_2 and [0001] =      0.000000000000 °    (substrate)
+00:00:00  c/a ratio in wurtzite =      1.000000000 (ideal ratio =      1.632993162).
+00:00:00  c/a ratio in wurtzite =      1.000000000 (ideal ratio =      1.632993162).
+00:00:00   
+00:00:00  ----------------------------------------------------------------------
+00:00:00  Rotation matrix for material number = 1:
+00:00:00  (  1.000000000  0.000000000  0.000000000 )   (hkl-x-direction)
+00:00:00  (  0.000000000  1.000000000  0.000000000 )   (hkl-y-direction)
+00:00:00  (  0.000000000  0.000000000  1.000000000 )   (hkl-z-direction)
+00:00:00  (transformation matrix for a vector from crystal coordinate system to simulation coordinate system: material_info(1)%transform_cxyz_to_xyz)
+00:00:00  ----------------------------------------------------------------------
+00:00:00   
+00:00:00  material_orientation:                   l =     1
+00:00:00  material_info(l)%interface_vector_in_cxyz = [     0.000000000     0.000000000     1.000000000   ] (only used for 'homogeneous-strain')
+00:00:00  material_orientation:                   l =     2
+00:00:00  material_info(l)%interface_vector_in_cxyz = [     0.000000000     0.000000000     1.000000000   ] (only used for 'homogeneous-strain')
+00:00:00  material_orientation:                   l =     3
+00:00:00  material_info(l)%interface_vector_in_cxyz = [     0.000000000     0.000000000     1.000000000   ] (only used for 'homogeneous-strain')
+00:00:00  no. of material grid points        =       112752
+00:00:00  no. of materials present in device =            2
+00:00:00  material no.     1 (                 GaN):     88000 material grid points
+00:00:00  material no.     2 (       In(x)Ga(1-x)N):     24752 material grid points
+00:00:00  magnetic field = no 
+00:00:00  The directory 'C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\band_structure/' does not exist yet.
+00:00:00  Trying to create:   'C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\band_structure/'
+00:00:00  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\band_structure\"'
+00:00:00  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\band_structure\"' finished.
+00:00:00  The directory 'C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\densities/' does not exist yet.
+00:00:00  Trying to create:   'C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\densities/'
+00:00:00  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\densities\"'
+00:00:00  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\densities\"' finished.
+00:00:00  Processing of input file finished.
+00:00:00 
+00:00:00  Parallelization using OpenMP.
+00:00:00  Setting number of parallel threads: NumberOfThreads =     1
+00:00:00  Reading in license file: C:\Users\Hu Group\Documents\nextnano\License\license.txt
+00:00:00 
+00:00:00  ----------------------------------------------------------
+00:00:00  License issued to:
+00:00:00  First name(s):  Homer
+00:00:00  Last name(s):   Simpson
+00:00:00  Organization:   Springfield Nuclear Power Plant, Springfield
+00:00:00  Country:        USA
+00:00:00  email:          homer.simpson@nextnano.com
+00:00:00 
+00:00:00  License valid until expiry date:
+00:00:00  Date: 2016-10-31
+00:00:00  License issued:
+00:00:00  Date: 2016-09-22
+00:00:00 
+00:00:00  NOTE: Your license will expire soon.  Contact support@nextnano.com for renewal.
+00:00:00  Found valid license.
+00:00:00  ----------------------------------------------------------
+00:00:00 
+00:00:00  device length along x direction:     200.000E+00 [nm]
+00:00:00  device length along y direction:     200.000E+00 [nm]
+00:00:00  device length along z direction:     100.000E+00 [nm]
+00:00:00  Mesh finished.
+00:00:00   n_1         * n_2         * n_3         =        37 *        37 *        88 =          120472
+00:00:00  Material grid points:
+00:00:00   n_1_MatGrid * n_2_MatGrid * n_3_MatGrid =        36 *        36 *        87 =          112752
+00:00:00  total device volume =       4.000E+06 [nm^3]
+00:00:00   no interface:     113202 ==>     113202
+00:00:00    | interface:         36 ==>         72
+00:00:00    - interface:         36 ==>         72
+00:00:00    / interface:       5670 ==>      11340
+00:00:00    + interface:       1528 ==>      12224
+00:00:00                                -----------
+00:00:01                            lengvecV (including multiple grid points) =          136910
+00:00:01  total device volume =       4.000E+06 [nm^3] (multiple grid points)
+00:00:01  Warning generate_multiple_points: Total volume is inconsistent.
+00:00:01   total volume (multiple grid points) =    4000000.00000015       [nm^3]
+00:00:01   total volume                        =    4000000.00000000       [nm^3]
+00:00:01      ABS(TotalVolume_multiple - TotalVolume) > epsilon
+00:00:01      ABS(TotalVolume_multiple - TotalVolume) =   1.550652086734772E-007  [nm^3]
+00:00:01                                      epsilon =   1.000000000000000E-010  [nm^3]
+00:00:01   Plotted material_grid3D.dat.
+00:00:01  main: Now setup quantum cluster.
+00:00:01   main: Setup interface states done.
+00:00:01   Plotted alloy_profile3D.dat.
+00:00:01  temperature:       T =      300.000000000E+00 [K]
+00:00:01                     T =       26.850000000E+00 [°C]
+00:00:01                     T =       80.330000000E+00 [°F]
+00:00:01               k_B * T =       25.852028373E-03 [eV]
+00:00:01   main: Now calculate strain.
+00:00:01   strain-calculation = no-strain: The strain tensor is assumed to be zero.
+00:00:01   main: Now generate new band structure of strained heterostructure.
+00:00:02  ------------------------------------------------------------------
+00:00:02  Conduction bands might have been resorted due to strain.
+00:00:02  ------------------------------------------------------------------
+00:00:02 
+00:00:02  ------------------------------------------------------------------
+00:00:02  material-number =     1: material-name = GaN
+00:00:02  ------------------------------------------------------------------
+00:00:02 
+00:00:02  ----------------------------------------------------------------------------
+00:00:02   Old conduction band structure: 'number-of-minima-of-cband = ...   ...   ...
+00:00:02 
+00:00:02  (old) conduction band =   1: Gamma
+00:00:02  (new) conduction band =   1      has got (new) minima # 1: Gamma_1
+00:00:02   
+00:00:02  (old) conduction band =   2: ---
+00:00:02  (new) conduction band =   2      has got (new) minima # 1: ---_1
+00:00:02                                   has got (new) minima # 2: ---_2
+00:00:02                                   has got (new) minima # 3: ---_3
+00:00:02                                   has got (new) minima # 4: ---_4
+00:00:02   
+00:00:02  (old) conduction band =   3: ---
+00:00:02  (new) conduction band =   3      has got (new) minima # 1: ---_1
+00:00:02                                   has got (new) minima # 2: ---_2
+00:00:02                                   has got (new) minima # 3: ---_3
+00:00:02   
+00:00:02 
+00:00:02  ----------------------------------------------------------------------------
+00:00:02   New conduction band structure:
+00:00:02 
+00:00:02  ==> (new) conduction band no. =  1:
+00:00:02      (old) conduction band no. =  1:  Gamma
+00:00:02      has got (old) minima # 1:        Gamma_1  (spin degeneracy = 2)
+00:00:02  
+00:00:02  ==> (new) conduction band no. =  2:
+00:00:02      (old) conduction band no. =  2:  ---
+00:00:02      has got (old) minima # 1:          ---_1  (spin degeneracy = 2)
+00:00:02  
+00:00:02      (old) conduction band no. =  2:  ---
+00:00:02      has got (old) minima # 2:          ---_2  (spin degeneracy = 2)
+00:00:02  
+00:00:02      (old) conduction band no. =  2:  ---
+00:00:02      has got (old) minima # 3:          ---_3  (spin degeneracy = 2)
+00:00:02  
+00:00:02      (old) conduction band no. =  2:  ---
+00:00:02      has got (old) minima # 4:          ---_4  (spin degeneracy = 2)
+00:00:02  
+00:00:02  ==> (new) conduction band no. =  3:
+00:00:02      (old) conduction band no. =  3:  ---
+00:00:02      has got (old) minima # 1:          ---_1  (spin degeneracy = 2)
+00:00:02  
+00:00:02      (old) conduction band no. =  3:  ---
+00:00:02      has got (old) minima # 2:          ---_2  (spin degeneracy = 2)
+00:00:02  
+00:00:02      (old) conduction band no. =  3:  ---
+00:00:02      has got (old) minima # 3:          ---_3  (spin degeneracy = 2)
+00:00:02  
+00:00:02  ------------------------------------------------------------------
+00:00:02  material-number =     2: material-name = In(x)Ga(1-x)N
+00:00:02  ------------------------------------------------------------------
+00:00:02 
+00:00:02  ----------------------------------------------------------------------------
+00:00:02   Old conduction band structure: 'number-of-minima-of-cband = ...   ...   ...
+00:00:02 
+00:00:02  (old) conduction band =   1: Gamma
+00:00:02  (new) conduction band =   1      has got (new) minima # 1: Gamma_1
+00:00:02   
+00:00:02  (old) conduction band =   2: ---
+00:00:02  (new) conduction band =   2      has got (new) minima # 1: ---_1
+00:00:02                                   has got (new) minima # 2: ---_2
+00:00:02                                   has got (new) minima # 3: ---_3
+00:00:02                                   has got (new) minima # 4: ---_4
+00:00:02   
+00:00:02  (old) conduction band =   3: ---
+00:00:02  (new) conduction band =   3      has got (new) minima # 1: ---_1
+00:00:02                                   has got (new) minima # 2: ---_2
+00:00:02                                   has got (new) minima # 3: ---_3
+00:00:02   
+00:00:02 
+00:00:02  ----------------------------------------------------------------------------
+00:00:02   New conduction band structure:
+00:00:02 
+00:00:02  ==> (new) conduction band no. =  1:
+00:00:02      (old) conduction band no. =  1:  Gamma
+00:00:02      has got (old) minima # 1:        Gamma_1  (spin degeneracy = 2)
+00:00:02  
+00:00:02  ==> (new) conduction band no. =  2:
+00:00:02      (old) conduction band no. =  2:  ---
+00:00:02      has got (old) minima # 1:          ---_1  (spin degeneracy = 2)
+00:00:02  
+00:00:02      (old) conduction band no. =  2:  ---
+00:00:02      has got (old) minima # 2:          ---_2  (spin degeneracy = 2)
+00:00:02  
+00:00:02      (old) conduction band no. =  2:  ---
+00:00:02      has got (old) minima # 3:          ---_3  (spin degeneracy = 2)
+00:00:02  
+00:00:02      (old) conduction band no. =  2:  ---
+00:00:02      has got (old) minima # 4:          ---_4  (spin degeneracy = 2)
+00:00:02  
+00:00:02  ==> (new) conduction band no. =  3:
+00:00:02      (old) conduction band no. =  3:  ---
+00:00:02      has got (old) minima # 1:          ---_1  (spin degeneracy = 2)
+00:00:02  
+00:00:02      (old) conduction band no. =  3:  ---
+00:00:02      has got (old) minima # 2:          ---_2  (spin degeneracy = 2)
+00:00:02  
+00:00:02      (old) conduction band no. =  3:  ---
+00:00:02      has got (old) minima # 3:          ---_3  (spin degeneracy = 2)
+00:00:02  
+00:00:02  Setup dielectricity done.
+00:00:02  Diagonalize for each grid point 6x6 k.p Hamiltonian (including strain).
+00:00:03  Diagonalization finished.
+00:00:03  Setup band edge done.
+00:00:03  CPU time:                          1.2 seconds (total time         3.5 seconds)
+00:00:03  SYSTEM time:                       1.3 seconds (total time         3.7 seconds)
+00:00:05  Setup of nonparabolicity done.
+00:00:05  CPU time:                          1.6 seconds (total time         5.1 seconds)
+00:00:05  SYSTEM time:                       1.6 seconds (total time         5.3 seconds)
+00:00:08  Setup of DOS done.
+00:00:08  CPU time:                          3.2 seconds (total time         8.4 seconds)
+00:00:08  SYSTEM time:                       3.2 seconds (total time         8.5 seconds)
+00:00:08   main: Check electrolyte (or graphene) done.
+00:00:08   main: Setup doping done.
+00:00:08  The directory 'C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\material_parameters/' does not exist yet.
+00:00:08  Trying to create:   'C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\material_parameters/'
+00:00:08  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\material_parameters\"'
+00:00:08  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\material_parameters\"' finished.
+00:00:08  Writing material parameters to directory = C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\material_parameters/
+00:00:09 Error Write_AVS_Vectorfield_r: VTK format not implemented yet for DimVector =    5: file 'elastic_constants.dat' cannot be written.
+00:00:09 Error Write_AVS_Vectorfield_r: VTK format not implemented yet for DimVector =   11: file 'piezo_polarization.dat' cannot be written.
+00:00:09  Writing material parameters for material 'GaN' to file:
+00:00:09  C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\material_parameters/MaterialParameters_Material1_GaN.txt
+00:00:09  Writing material parameters for material 'In(x)Ga(1-x)N' to file:
+00:00:09  C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\material_parameters/MaterialParameters_Material2_In(x)Ga(1-x)N,x= 0.200,1-x= 0.800.txt
+00:00:09  Writing material parameters for material 'GaN' to file:
+00:00:09  C:\Users\Hu Group\Documents\nextnano\Output\0821-InGaN-QDs-fQWs\material_parameters/MaterialParameters_Material3_GaN.txt
+00:00:09   main: Output of material parameters finished. ($output-material)
+00:00:09   main: Get for each grid point the intrinsic density (bulk).
+00:00:19  Time for intrinsic density (bulk):
+00:00:19  CPU time:                          9.5 seconds (total time        19.0 seconds)
+00:00:19  SYSTEM time:                       9.4 seconds (total time        19.2 seconds)
+00:00:19   
+00:00:19  Setup  pyroelectricity:
+00:00:19  Setup piezoelectricity:
+00:00:20  Special treatment at contacts: Piezoelectric polarization set to zero.
+00:00:20  Special treatment at contacts:  Pyroelectric polarization set to zero.
+00:00:20  Time for piezo (and pyro) charges:
+00:00:20  CPU time:                          1.4 seconds (total time        20.4 seconds)
+00:00:20  SYSTEM time:                       1.4 seconds (total time        20.6 seconds)
+00:00:21   Output of piezo charges done.
+00:00:21  Equilibrium calculation.
+00:00:21  Calculate built-in potential classically (no quantum mechanics).
+00:00:21   ==> nonlinear Poisson equation
+00:00:21  Using     0.000000E+00 [V] as starting value for the electrostatic potential (initial guess).
+00:00:21  Calculating starting value (initial guess) for electrostatic potential based on doping.
+00:00:21  Poisson block: Define Poisson problem.
+00:00:21  Poisson block: Setup Poisson cluster points.
+00:00:21   This subroutine probably has to be called only once.
+00:00:21   (be careful for Fermi contacts or built-in potential)
+00:00:21  Poisson block: Setup Poisson matrix.
+00:00:21  Poisson block: Set Dirichlet boundary conditions.
+00:00:21   
+00:00:21  Solving nonlinear Poisson equation with Newton method.
+00:00:21  Newton: Max. iterations (NonLinPoissonIterations) =       50
+00:00:21  Newton: Tolerance       (NonLinPoissonResidual)   =     1.00000E-08
+00:00:21  Newton-3 iteration           1            norm2 =      8.177321165E-03
+00:00:22  ILU_r preconditioner: path,maxfil          111          10
+00:00:24  cscg_R: iter,nstep,tol:      189     224    954.983753366187E-09
+00:00:24  PCG_Kent (cscg_R): Number of matrix-vector products =          224
+00:00:24    residual =      1.069158785E-03
+00:00:24  Newton-3 iteration           2            norm2 =      7.809208858E-09
+00:00:24  ILU_r preconditioner: path,maxfil          111          10
+00:00:28  cscg_R: iter,nstep,tol:      364     419      1.126420406774E-06
+00:00:28  PCG_Kent (cscg_R): Number of matrix-vector products =          420
+00:00:29    residual =      1.044030336E-09
+00:00:29  Message newton: residual < specified residual   (|| fV || <= residual_requested)
+00:00:29   Residual criteria:        residual =      1.044030336E-09, converged = T (fV)
+00:00:29  (Absolute error criteria: error_abs =      3.998674033E-02, converged = F (xV,xV_old))
+00:00:29  (Relative error criteria: error_rel =      1.141278379E-04, converged = F (xV,xV_old))
+00:00:29  (Mixed    error criteria: error_mix =      3.998674033E-02, converged = F (xV,xV_old))
+00:00:29  Time for Newton solver:
+00:00:29  CPU time:                          7.4 seconds (total time        28.9 seconds)
+00:00:29  SYSTEM time:                       7.4 seconds (total time        29.1 seconds)
+00:00:29  Updating classical built-in potential.
+00:00:29  Updating built-in potential.
+00:00:29  Calculate intrinsic density for built-in potential.
+00:00:29  
+00:00:29  main: *********************************************************************
+00:00:29  
+00:00:29   main: flow-scheme =            4
+00:00:29   main: Calculate nonlinear Poisson equation (no quantum mechanics!).
+00:00:29  Poisson block: Define Poisson problem.
+00:00:29  Poisson block: Setup Poisson matrix.
+00:00:29  Poisson block: Set Dirichlet boundary conditions.
+00:00:29   
+00:00:29  Solving nonlinear Poisson equation with Newton method.
+00:00:29  Newton: Max. iterations (NonLinPoissonIterations) =       50
+00:00:29  Newton: Tolerance       (NonLinPoissonResidual)   =     1.00000E-08
+00:00:29  Newton-3 iteration           1            norm2 =      7.625668948E-15
+00:00:29  ILU_r preconditioner: path,maxfil          111          10
+00:00:38  cscg_R: iter,nstep,tol:      898    1000     91.404748284164E-03
+00:00:38  PCG_Kent (cscg_R): Number of matrix-vector products =         1001
+00:00:39    residual =      7.840205948E-10
+00:00:39  Message newton: residual < specified residual   (|| fV || <= residual_requested)
+00:00:39   Residual criteria:        residual =      7.840205948E-10, converged = T (fV)
+00:00:39  (Absolute error criteria: error_abs =      2.262879347E+02, converged = F (xV,xV_old))
+00:00:39  (Relative error criteria: error_rel =      1.791706571E+00, converged = F (xV,xV_old))
+00:00:39  (Mixed    error criteria: error_mix =      2.262879347E+02, converged = F (xV,xV_old))
+00:00:39  Time for Newton solver:
+00:00:39  CPU time:                          9.6 seconds (total time        38.9 seconds)
+00:00:39  SYSTEM time:                       9.6 seconds (total time        39.1 seconds)
+00:00:39   main: flow-scheme part finished.
+00:00:39   main: Output of integrated density done.
+00:00:39  Now Output...
+00:00:39  Writing out Gamma conduction band edge.
+00:00:39  Writing out hh valence band edge.
+00:00:42  Writing out densities...
+00:00:45  Writing out densities...done
+00:00:45     (==> This is the SYSTEM time for the whole output.)
+00:00:45   Output done.
+00:00:45   
+00:00:45  -------------------------------------------------------------------------------
+00:00:45  nextnano3 - next generation 3D nano device simulator (1.9.0)
+00:00:45  -------------------------------------------------------------------------------
+00:00:45   
+00:00:45  -------------------------------------------------------------------------------
+00:00:45  Thank you for using nextnano3!
+00:00:45  Please be aware that nextnano3 is not a 'black box' tool.
+00:00:45  Understanding the underlying physics and/or the source code is a big advantage.
+00:00:45  -------------------------------------------------------------------------------
+00:00:45   
+00:00:45  Support? Feedback? Information? ==> support@nextnano.com
+00:00:45  Online Documentation            ==> http://www.nextnano.com/nextnano3
+00:00:45   
+00:00:45  -------------------------------------------------------------------------------
+00:00:45   
+00:00:45  *******************************************************************************
+00:00:45  Start time ==> Date: 2016-09-17   Time: 5:04:26 (-0400)
+00:00:45    End time ==> Date: 2016-09-17   Time: 5:05:12 (-0400)
+00:00:45  ----------------------------
+00:00:45  Total nextnano3 CPU time:   
+00:00:45  Program has used total of         45.2 seconds
+00:00:45  ----------------------------
+00:00:45  Total nextnano3 SYSTEM time:
+00:00:45  Program has used total of         45.5 seconds
+00:00:45  *******************************************************************************

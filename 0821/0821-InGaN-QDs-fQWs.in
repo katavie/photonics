@@ -1,0 +1,208 @@
+! 0821-InGaN-QDs-fQWs.in
+! By: Katherine M. Huang
+! Last updated: 08/21/17
+!
+! 200nm x 200nm x 100nm unintentionally doped GaN grown on sapphire
+!
+! z = 30-32nm QD
+! z = 50-52nm fQW
+! z = 70-72nm fQW
+! z = 72-74nm QD
+
+$numeric-control       
+ simulation-dimension = 3
+ varshni-parameters-on = yes ! temperature dependent bandgaps
+ lattice-constants-temp-coeff-on = yes
+ piezo-constants-zero = no
+ pyro-constants-zero = no
+$end_numeric-control
+
+!****** OVERALL SIMULATION PARAMETERS **************************************!
+
+$simulation-dimension       
+ dimension = 3
+ orientation = 1 1 1
+$end_simulation-dimension
+
+$global-parameters       
+ lattice-temperature = 300d0 ! 300 K
+$end_global-parameters
+
+$simulation-flow-control       
+ flow-scheme = 4 ! solve Poisson (but not Schrodinger) self-consistently for classical band structure
+ strain-calculation = no-strain
+$end_simulation-flow-control
+
+$domain-coordinates       
+ domain-type = 1 1 1
+ x-coordinates = 0d0 200d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 100d0
+ growth-coordinate-axis = 0 0 1
+ pseudomorphic-on = GaAs
+
+ hkil-x-direction = 1  0 -1  0
+ hkil-z-direction = 0  0  0  1
+$end_domain-coordinates
+
+!****** END OVERALL SIMULATION PARAMETERS **********************************!
+
+
+!****** REGIONS AND CLUSTERS ***********************************************!
+
+$regions
+ ! bulk GaN
+ region-number = 1
+ base-geometry = cuboid
+ region-priority = 1
+ x-coordinates = 0d0 200d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 0d0 100d0
+
+ ! isolated QD; x = 30-32nm
+ region-number = 2
+ base-geometry = semiellipsoid
+ region-priority = 2 ! higher number overrides lower
+ base-coordinates = 99d0 101d0 100d0 100d0 30d0 32d0
+ top-coordinates = 100d0 99d0 31d0
+
+ region-number = 3
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 99d0 101d0 100d0 100d0 30d0 32d0
+ top-coordinates = 100d0 101d0 31d0
+
+ ! isolated fQW; x = 50-52nm
+ region-number = 4
+ base-geometry = cuboid
+ region-priority = 2
+ x-coordinates = 0d0 200d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 50d0 52d0
+
+ ! fQW in pair; x = 70-72nm
+ region-number = 5
+ base-geometry = cuboid
+ region-priority = 2
+ x-coordinates = 0d0 200d0
+ y-coordinates = 0d0 200d0
+ z-coordinates = 70d0 72d0
+
+ ! QD in pair; x = 72-74nm
+ region-number = 6
+ base-geometry = semiellipsoid
+ region-priority = 2 ! higher number overrides lower
+ base-coordinates = 99d0 101d0 100d0 100d0 72d0 74d0
+ top-coordinates = 100d0 99d0 73d0
+
+ region-number = 7
+ base-geometry = semiellipsoid
+ region-priority = 2
+ base-coordinates = 99d0 101d0 100d0 100d0 72d0 74d0
+ top-coordinates = 100d0 101d0 73d0
+$end_regions
+
+$grid-specification       
+ grid-type = 1 1 1
+
+ x-grid-lines = 0d0 95d0 99d0 100d0 101d0 105d0 200d0
+ x-nodes =         4    4    7     7     4     4
+ x-grid-factors =  1d0  1d0  1d0   1d0   1d0   1d0
+
+ y-grid-lines = 0d0 95d0 99d0 100d0 101d0 105d0 200d0
+ y-nodes =         4    4    7     7     4     4
+ y-grid-factors =  1d0  1d0  1d0   1d0   1d0   1d0
+
+ z-grid-lines = 0d0 28d0 30d0 31d0 32d0 34d0 48d0 50d0 51d0 52d0 54d0 68d0 70d0 72d0 73d0 74d0 76d0 100d0
+ z-nodes =        5     4    4    4    4    3    4    4    4    4    3    4    6    4    4    4    5
+ z-grid-factors = 1d0   1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0  1d0
+$end_grid-specification
+
+$region-cluster       
+ ! bulk GaN
+ cluster-number = 1  region-numbers = 1
+
+ ! InGaN
+ cluster-number = 2  region-numbers = 2 3 4 5 6 7
+
+ ! you always have 1 more region than you actually specified, default: GaN
+ ! must be separate from cluster 1 bc strain model requires substrate cluster to contain only 1 region
+ cluster-number = 3  region-numbers = 8
+$end_region-cluster
+
+!****** END REGIONS AND CLUSTER ********************************************!
+
+
+!****** MATERIALS AND ALLOY PROFILES ***************************************!
+
+$material       
+ material-number = 1
+ material-name = GaN
+ cluster-numbers = 1
+
+ material-number = 2
+ material-name = In(x)Ga(1-x)N
+ alloy-function = constant
+ cluster-numbers = 2
+
+ material-number = 3
+ material-name = GaN
+ cluster-numbers = 3
+$end_material
+
+$alloy-function       
+ material-number = 2
+ function-name = constant
+ xalloy = 0.2d0 ! In(0.2)Ga(0.8)N
+$end_alloy-function
+
+!****** END MATERIALS AND ALLOY PROFILES ***********************************!
+
+
+!****** OUTPUT *************************************************************!
+
+$global-settings       
+ output-directory = <name_of_input_file>
+$end_global-settings
+
+$output-bandstructure       
+ destination-directory = band_structure/
+ conduction-band-numbers = 1
+ valence-band-numbers = 1
+ band-gap = yes
+ potential = yes
+ built-in-potential = yes
+ electric-field = yes
+$end_output-bandstructure
+
+$output-file-format
+ simulation-dimension     = 3
+ file-format              = AVS
+ VTK-XML                  = yes
+$end_output-file-format
+
+$output-densities       
+ destination-directory = densities/
+ electrons = yes
+ holes = yes
+ charge-density = yes
+ piezo-electricity = yes
+$end_output-densities
+
+$output-material
+ destination-directory = material_parameters/
+ lattice-constants = lattice_constants.dat
+ elastic-constants = elastic_constants.dat
+ piezoelectric-polarization = piezo_polarization.dat
+ spontaneous-polarization = pyro_polarization.dat
+$end_output-material
+
+$output-section
+ section-number = 1
+ section-name = slice_along
+ section-type = z
+ x = 100d0
+ y = 100d0
+$end_output-section
+
+!****** END OUTPUT *********************************************************!

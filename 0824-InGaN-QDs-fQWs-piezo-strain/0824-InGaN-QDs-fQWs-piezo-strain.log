@@ -1,0 +1,722 @@
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Command line information
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  command line        = "C:\Program Files (x86)\nextnano\2015_08_19\nextnano3\Intel 64bit\nextnano3_Intel_64bit.exe"  -license "C:\Users\Hu Group\Documents\nextnano\License\license.txt" -inputfile "C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\0824-InGaN-QDs-fQWs-piezo-strain.in" -outputdirectory "C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\"
+00:00:00  command name        = C:\Program Files (x86)\nextnano\2015_08_19\nextnano3\Intel 64bit\nextnano3_Intel_64bit.exe
+00:00:00  command argument  1 = -license
+00:00:00  command argument  2 = C:\Users\Hu Group\Documents\nextnano\License\license.txt
+00:00:00  command argument  3 = -inputfile
+00:00:00  command argument  4 = C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\0824-InGaN-QDs-fQWs-piezo-strain.in
+00:00:00  command argument  5 = -outputdirectory
+00:00:00  command argument  6 = C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\
+00:00:00  number of command arguments =   6
+00:00:00  Reading in input file:      'C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\0824-InGaN-QDs-fQWs-piezo-strain.in'
+00:00:00  Using the output directory: 'C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\'
+00:00:00  License file location:      'C:\Users\Hu Group\Documents\nextnano\License\license.txt'
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Start time ==> Date: 2016-09-20   Time: 4:10:39 (-0400)
+00:00:00   
+00:00:00  ANY USE OF THIS CODE CONSTITUTES ACCEPTANCE OF THE TERMS OF THE COPYRIGHT NOTICE.
+00:00:00  
+00:00:00  ===============================================================================
+00:00:00  COPYRIGHT NOTICE
+00:00:00  ===============================================================================
+00:00:00  
+00:00:00  The original nextnano3 code has been modified by nextnano GmbH, Germany.
+00:00:00  This modified code is proprietary software.
+00:00:00  Proprietary software is computer software licensed under exclusive legal right
+00:00:00  of the copyright holder.
+00:00:00  The licensee is given the right to use the software under certain conditions,
+00:00:00  but restricted from other uses, such as modification, further distribution,
+00:00:00  or reverse engineering.
+00:00:00  
+00:00:00  Copyright (c) 2012 - 2016, nextnano GmbH, Germany.
+00:00:00  All rights reserved.
+00:00:00  
+00:00:00  Redistribution and use in source and binary forms, with or without modification,
+00:00:00  are not permitted.
+00:00:00  
+00:00:00  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+00:00:00  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+00:00:00  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+00:00:00  IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY
+00:00:00  DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+00:00:00  (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+00:00:00  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+00:00:00  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+00:00:00  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+00:00:00  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+00:00:00  
+00:00:00  Please read the file 'copyright_nextnano3.txt' in your installation folder
+00:00:00  for further information about source code of third parties that is used
+00:00:00  in the nextnano3 code.
+00:00:00  
+00:00:00  ===============================================================================
+00:00:00  END OF COPYRIGHT NOTICE
+00:00:00  ===============================================================================
+00:00:00   
+00:00:00  -------------------------------------------------------------------------------
+00:00:00  nextnano3 - next generation 3D nano device simulator (1.9.0)
+00:00:00  -------------------------------------------------------------------------------
+00:00:00  Build type:                    Release
+00:00:00  Build date:                    2015-08-17
+00:00:00  Platform:                      Windows
+00:00:00  Architecture:                  64-bit
+00:00:00  Parallelization:               none
+00:00:00  Compiler:                      Intel(R) Visual Fortran Composer XE 2013 SP1, Version: 1400, Build date: 20131008
+00:00:00  Precompiled numerical library: MKL 11.0 Update 2
+00:00:00  For documentation and support please visit our website: http://www.nextnano.com/nextnano3
+00:00:00  -------------------------------------------------------------------------------
+00:00:00 
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Environment / System information
+00:00:00  ------------------------------------------------------------------------------
+00:00:00   Your operating system is 64-bit.
+00:00:00  Environment variable 'HOMEPATH' = \Users\Hu Group
+00:00:00  directory = \Users\
+00:00:00  Your working directory is:
+00:00:00 C:\Program Files (x86)\nextnano\2015_08_19\nextnano3\Intel 64bit
+00:00:00  Environment variable 'NEXTNANO' = 
+00:00:00  Environment variable 'OS' = Windows_NT
+00:00:00  Environment variable 'NUMBER_OF_PROCESSORS' = 8
+00:00:00  Environment variable 'MACHINE' = 
+00:00:00  Environment variable 'PROCESSOR_ARCHITECTURE' = AMD64
+00:00:00  Environment variable 'PROCESSOR_IDENTIFIER' = Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+00:00:00  ------------------------------------------------------------------------------
+00:00:00 
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Reading in input file: 'C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\0824-InGaN-QDs-fQWs-piezo-strain.in'
+00:00:00 
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Reading in database_nn3:   '../Syntax/database_nn3.in'
+00:00:00  ../Syntax/database_nn3.in: Build up input queue for all database_nn3 entries. (finished)
+00:00:00 
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Processing input file.
+00:00:00  ------------------------------------------------------------------------------
+00:00:00  Using debug-level =     0 (no debug information is printed out) (default)
+00:00:00  Stacksize for OpenMP: OMP_STACKSIZE =       67108864 bytes (default) =    64.000 MB (MiB) (default)
+00:00:00  Warnings are switched off.
+00:00:00  Performing a 3D simulation in (x,y,z) space.
+00:00:00  
+00:00:00  ---------------------------------------------------------------
+00:00:00  number of x-grid entries found in input file =            1
+00:00:00  number of y-grid entries found in input file =            1
+00:00:00  number of z-grid entries found in input file =            1
+00:00:00  ---------------------------------------------------------------
+00:00:00  
+00:00:00  ---------------------------------------------------------------
+00:00:00  number of nodes to create in x-direction =         37
+00:00:00  number of nodes to create in y-direction =         37
+00:00:00  number of nodes to create in z-direction =         93
+00:00:00  ---------------------------------------------------------------
+00:00:00  
+00:00:00  ---------------------------------------------------------------
+00:00:00  number of entries for  $region-cluster =            4
+00:00:00  ---------------------------------------------------------------
+00:00:00  
+00:00:00  Region cuboid processed:       119232 grid points
+00:00:00  Region semiellipsoid processed:          680 grid points
+00:00:00  Region cuboid processed:        12960 grid points
+00:00:00  Region cuboid processed:         9072 grid points
+00:00:00  Region semiellipsoid processed:          680 grid points
+00:00:00  Region semiellipsoid processed:          680 grid points
+00:00:00  Region semiellipsoid processed:          680 grid points
+00:00:00  Region cuboid processed:         7776 grid points
+00:00:00  no. of clusters                            =        4
+00:00:00  cluster     1: no. of material grid points =    86704
+00:00:00  cluster     2: no. of material grid points =    24752
+00:00:00  cluster     3: no. of material grid points =        0
+00:00:00  cluster     4: no. of material grid points =     7776
+00:00:00  material-number #     1: GaN
+00:00:00  material-type     =      GaN-wz-default
+00:00:00  apply to clusters =            1           4
+00:00:00  material-number #     2: In(x)Ga(1-x)N
+00:00:00  material-type     =      In(x)Ga(1-x)N-wz-default
+00:00:00  apply to clusters =            2
+00:00:00  alloy function    = constant
+00:00:00  material-number #     3: GaN
+00:00:00  material-type     =      GaN-wz-default
+00:00:00  apply to clusters =            3
+00:00:00  The simulated structure contains at least one wurtzite material.
+00:00:01  New strain-minimization routine is taken (1D/2D/3D).
+00:00:01  cluster-number =           4  is specified as substrate.
+00:00:01  Varshni parameters were switched on.
+00:00:01  I will use temperature dependent energy gaps.
+00:00:01  (temperature dependent conduction-band-energies)
+00:00:01  Varshni parameters were switched on.
+00:00:01  I will use temperature dependent energy gaps.
+00:00:01  (temperature dependent conduction-band-energies)
+00:00:01  Piezoelectric constants as specified in database or input file.
+00:00:01  Pyroelectric constants as specified in database or input file.
+00:00:01  wurtzite crystal orientation (Bravais-Miller indices as specified in input file or database)
+00:00:01  hkil-x-direction   =      1.000000     0.000000    -1.000000     0.000000
+00:00:01  hkil-z-direction   =      0.000000     0.000000     0.000000     1.000000
+00:00:01 
+00:00:01  wurtzite crystal orientation (Bravais-Miller indices [hkil] are cooked down to 3 lattice axes used [hkl].)
+00:00:01  hkl-x-direction    =      2.000000     1.000000     0.000000
+00:00:01  hkl-z-direction    =      0.000000     0.000000     1.000000
+00:00:01  3rd direction      =      0.447214    -0.894427     0.000000
+00:00:01  3rd direction corresponds to (hkil) plane     = (     0.447214    -0.894427     0.447214     0.000000)
+00:00:01  $domain-coordinates: Getting lattice constants for substrate material = GaN
+00:00:01   substrate lattice constants for material      1 =     0.31890000    0.31890000    0.51850000 [nm]
+00:00:01   substrate lattice constants for material      2 =     0.31890000    0.31890000    0.51850000 [nm]
+00:00:01   substrate lattice constants for material      3 =     0.31890000    0.31890000    0.51850000 [nm]
+00:00:01  c/a ratio in wurtzite =      1.625901537 (ideal ratio =      1.632993162).
+00:00:01  3rd direction corresponds to [hkil] direction = [     0.447214    -0.894427     0.447214     0.000000]
+00:00:01  angle between hkil directions   =     90.000000000000 °    (substrate)
+00:00:01  angle between hkil_1 and [0001] =     90.000000000000 °    (substrate)
+00:00:01  angle between hkil_2 and [0001] =      0.000000000000 °    (substrate)
+00:00:01  c/a ratio in wurtzite =      1.625901537 (ideal ratio =      1.632993162).
+00:00:01  c/a ratio in wurtzite =      1.625901537 (ideal ratio =      1.632993162).
+00:00:01   
+00:00:01  ----------------------------------------------------------------------
+00:00:01  Rotation matrix for material number = 1:
+00:00:01  (  1.000000000  0.000000000  0.000000000 )   (hkl-x-direction)
+00:00:01  (  0.000000000  1.000000000  0.000000000 )   (hkl-y-direction)
+00:00:01  (  0.000000000  0.000000000  1.000000000 )   (hkl-z-direction)
+00:00:01  (transformation matrix for a vector from crystal coordinate system to simulation coordinate system: material_info(1)%transform_cxyz_to_xyz)
+00:00:01  ----------------------------------------------------------------------
+00:00:01   
+00:00:01  material_orientation:                   l =     1
+00:00:01  material_info(l)%interface_vector_in_cxyz = [     0.000000000     0.000000000     1.000000000   ] (only used for 'homogeneous-strain')
+00:00:01  material_orientation:                   l =     2
+00:00:01  material_info(l)%interface_vector_in_cxyz = [     0.000000000     0.000000000     1.000000000   ] (only used for 'homogeneous-strain')
+00:00:01  material_orientation:                   l =     3
+00:00:01  material_info(l)%interface_vector_in_cxyz = [     0.000000000     0.000000000     1.000000000   ] (only used for 'homogeneous-strain')
+00:00:01  no. of material grid points        =       119232
+00:00:01  no. of materials present in device =            2
+00:00:01  material no.     1 (                 GaN):     94480 material grid points
+00:00:01  material no.     2 (       In(x)Ga(1-x)N):     24752 material grid points
+00:00:01  magnetic field = no 
+00:00:01  The directory 'C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\band_structure/' does not exist yet.
+00:00:01  Trying to create:   'C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\band_structure/'
+00:00:01  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\band_structure\"'
+00:00:01  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\band_structure\"' finished.
+00:00:01  The directory 'C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\densities/' does not exist yet.
+00:00:01  Trying to create:   'C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\densities/'
+00:00:01  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\densities\"'
+00:00:01  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\densities\"' finished.
+00:00:01  The directory 'C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\strain/' does not exist yet.
+00:00:01  Trying to create:   'C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\strain/'
+00:00:01  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\strain\"'
+00:00:01  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\strain\"' finished.
+00:00:01  Processing of input file finished.
+00:00:01 
+00:00:01  Parallelization using OpenMP.
+00:00:01  Setting number of parallel threads: NumberOfThreads =     1
+00:00:01  Reading in license file: C:\Users\Hu Group\Documents\nextnano\License\license.txt
+00:00:01 
+00:00:01  ----------------------------------------------------------
+00:00:01  License issued to:
+00:00:01  First name(s):  Homer
+00:00:01  Last name(s):   Simpson
+00:00:01  Organization:   Springfield Nuclear Power Plant, Springfield
+00:00:01  Country:        USA
+00:00:01  email:          homer.simpson@nextnano.com
+00:00:01 
+00:00:01  License valid until expiry date:
+00:00:01  Date: 2016-10-31
+00:00:01  License issued:
+00:00:01  Date: 2016-09-22
+00:00:01 
+00:00:01  NOTE: Your license will expire soon.  Contact support@nextnano.com for renewal.
+00:00:01  Found valid license.
+00:00:01  ----------------------------------------------------------
+00:00:01 
+00:00:01  device length along x direction:     200.000E+00 [nm]
+00:00:01  device length along y direction:     200.000E+00 [nm]
+00:00:01  device length along z direction:     100.000E+00 [nm]
+00:00:01  Mesh finished.
+00:00:01   n_1         * n_2         * n_3         =        37 *        37 *        93 =          127317
+00:00:01  Material grid points:
+00:00:01   n_1_MatGrid * n_2_MatGrid * n_3_MatGrid =        36 *        36 *        92 =          119232
+00:00:01  total device volume =       4.000E+06 [nm^3]
+00:00:01   no interface:     120047 ==>     120047
+00:00:01    | interface:         36 ==>         72
+00:00:01    - interface:         36 ==>         72
+00:00:01    / interface:       5670 ==>      11340
+00:00:01    + interface:       1528 ==>      12224
+00:00:01                                -----------
+00:00:01                            lengvecV (including multiple grid points) =          143755
+00:00:01  total device volume =       4.000E+06 [nm^3] (multiple grid points)
+00:00:01  Warning generate_multiple_points: Total volume is inconsistent.
+00:00:01   total volume (multiple grid points) =    4000000.00000016       [nm^3]
+00:00:01   total volume                        =    4000000.00000000       [nm^3]
+00:00:01      ABS(TotalVolume_multiple - TotalVolume) > epsilon
+00:00:01      ABS(TotalVolume_multiple - TotalVolume) =   1.662410795688629E-007  [nm^3]
+00:00:01                                      epsilon =   1.000000000000000E-010  [nm^3]
+00:00:01   Plotted material_grid3D.dat.
+00:00:01  main: Now setup quantum cluster.
+00:00:01   main: Setup interface states done.
+00:00:01   Plotted alloy_profile3D.dat.
+00:00:01  temperature:       T =      300.000000000E+00 [K]
+00:00:01                     T =       26.850000000E+00 [°C]
+00:00:01                     T =       80.330000000E+00 [°F]
+00:00:01               k_B * T =       25.852028373E-03 [eV]
+00:00:01   main: Now calculate strain.
+00:00:01   strain-calculation = strain-minimization-new
+00:00:01   Now calculate strain.
+00:00:01   Strain matrix: strain-symm-sparse-matrix =  F
+00:00:01  There are no air clusters.
+00:00:01  An air cluster is defined as a material where all elastic constants are zero.
+00:00:01  -------------------------------------------------------------
+00:00:01  IMPORTANT:
+00:00:01  Be sure that the substrate cluster is a simply connected set.
+00:00:01  Otherwise, the results may not reproduce the real physics. 
+00:00:01  
+00:00:01  Be sure that the cluster remains to be a simply connected set
+00:00:01  being repeated periodically.
+00:00:01  
+00:00:01  In future we plan to do the check inside the code.   
+00:00:01  -------------------------------------------------------------
+00:00:01  hexagonal c axis along direction #3
+00:00:01  Message calculate_strain_by_minimization: The structure is grown on a substrate.
+00:00:01  calculate_strain_by_minimization: Setup of the strain matrix ...
+00:00:01  Setup of strain matrix: Assume nonsymmetric matrix for storage.
+00:00:01  material number of substrate material (reference material) for strain =   4
+00:00:01  lattice constants of substrate: a1 =       0.318900 [nm]
+00:00:01                                  a2 =       0.318900 [nm]
+00:00:01                                  a3 =       0.518500 [nm]
+00:01:01  total number of matrix elements in linked list =         5026640
+00:01:01  Temporary memory that was needed for linked list array of matrix values.
+00:01:01  Memory needed [   REAL]:  8 byte *      5026640 =       38.350 MB (MiB = Mebibyte)
+00:01:01  Use $numeric-control
+00:01:01       discretize-only-once = no  ! (default: 'yes')
+00:01:01  if this is too much for your computer.
+00:01:01  number of off-diagonal elements =      4668944
+00:01:01  Allocate sparse matrix:
+00:01:01  Memory needed [   REAL]:  8 byte *      5026641 =       38.350 MB (MiB = Mebibyte)
+00:01:01                          dimension             =       357696
+00:01:01                          off-diagonal elements =      4668944
+00:01:01                          total size of array   =      5026641
+00:06:51  calculate_strain_by_minimization: Setup of the strain matrix is done.
+00:06:51  CPU time:                        410.1 seconds (total time       411.4 seconds)
+00:06:51  CPU time:     6 minutes, 50 seconds
+00:06:51  Starting BiCGSTAB for strain minimization. Dim=    357696
+00:06:51  Maximum no. of iterations =     2000, residual =       1.000000E-12
+00:07:18  BICGSTAB_modified: Number of matrix-vector products =         1680
+00:07:18  No. of iterations, residual =         840  8.138021887629872E-013
+00:07:18  Maximum and minimum value of displacements:
+00:07:18  maximum displacement =      47.068828122714E-03 [nm]
+00:07:18  minimum displacement =     -56.647885704182E-03 [nm]
+00:07:18  CPU time:                         26.8 seconds (total time       438.2 seconds)
+00:07:18  SYSTEM time:                      26.8 seconds (total time       438.3 seconds)
+00:07:19   Calculation of strain finished.
+00:07:19  energy of elastic deformation =   217.13798266E+03 [eV]
+00:07:19  energy density of elastic deformation (average) =    54.28449567E-03 [eV/nm^3]
+00:07:19                                                  =     8.69733426E-03 [GJ/m^3]
+00:07:20  Done strain output.
+00:07:20   Output of strain finished.
+00:07:20   main: Now generate new band structure of strained heterostructure.
+00:07:21  ------------------------------------------------------------------
+00:07:21  Conduction bands might have been resorted due to strain.
+00:07:21  ------------------------------------------------------------------
+00:07:21 
+00:07:21  ------------------------------------------------------------------
+00:07:21  material-number =     1: material-name = GaN
+00:07:21  ------------------------------------------------------------------
+00:07:21 
+00:07:21  ----------------------------------------------------------------------------
+00:07:21   Old conduction band structure: 'number-of-minima-of-cband = ...   ...   ...
+00:07:21 
+00:07:21  (old) conduction band =   1: Gamma
+00:07:21  (new) conduction band =   1      has got (new) minima # 1: Gamma_1
+00:07:21   
+00:07:21  (old) conduction band =   2: ---
+00:07:21  (new) conduction band =   2      has got (new) minima # 1: ---_1
+00:07:21                                   has got (new) minima # 2: ---_2
+00:07:21                                   has got (new) minima # 3: ---_3
+00:07:21                                   has got (new) minima # 4: ---_4
+00:07:21   
+00:07:21  (old) conduction band =   3: ---
+00:07:21  (new) conduction band =   3      has got (new) minima # 1: ---_1
+00:07:21                                   has got (new) minima # 2: ---_2
+00:07:21                                   has got (new) minima # 3: ---_3
+00:07:21   
+00:07:21 
+00:07:21  ----------------------------------------------------------------------------
+00:07:21   New conduction band structure:
+00:07:21 
+00:07:21  ==> (new) conduction band no. =  1:
+00:07:21      (old) conduction band no. =  1:  Gamma
+00:07:21      has got (old) minima # 1:        Gamma_1  (spin degeneracy = 2)
+00:07:21  
+00:07:21  ==> (new) conduction band no. =  2:
+00:07:21      (old) conduction band no. =  2:  ---
+00:07:21      has got (old) minima # 1:          ---_1  (spin degeneracy = 2)
+00:07:21  
+00:07:21      (old) conduction band no. =  2:  ---
+00:07:21      has got (old) minima # 2:          ---_2  (spin degeneracy = 2)
+00:07:21  
+00:07:21      (old) conduction band no. =  2:  ---
+00:07:21      has got (old) minima # 3:          ---_3  (spin degeneracy = 2)
+00:07:21  
+00:07:21      (old) conduction band no. =  2:  ---
+00:07:21      has got (old) minima # 4:          ---_4  (spin degeneracy = 2)
+00:07:21  
+00:07:21  ==> (new) conduction band no. =  3:
+00:07:21      (old) conduction band no. =  3:  ---
+00:07:21      has got (old) minima # 1:          ---_1  (spin degeneracy = 2)
+00:07:21  
+00:07:21      (old) conduction band no. =  3:  ---
+00:07:21      has got (old) minima # 2:          ---_2  (spin degeneracy = 2)
+00:07:21  
+00:07:21      (old) conduction band no. =  3:  ---
+00:07:21      has got (old) minima # 3:          ---_3  (spin degeneracy = 2)
+00:07:21  
+00:07:21  ------------------------------------------------------------------
+00:07:21  material-number =     2: material-name = In(x)Ga(1-x)N
+00:07:21  ------------------------------------------------------------------
+00:07:21 
+00:07:21  ----------------------------------------------------------------------------
+00:07:21   Old conduction band structure: 'number-of-minima-of-cband = ...   ...   ...
+00:07:21 
+00:07:21  (old) conduction band =   1: Gamma
+00:07:21  (new) conduction band =   1      has got (new) minima # 1: Gamma_1
+00:07:21   
+00:07:21  (old) conduction band =   2: ---
+00:07:21  (new) conduction band =   2      has got (new) minima # 1: ---_1
+00:07:21                                   has got (new) minima # 2: ---_2
+00:07:21                                   has got (new) minima # 3: ---_3
+00:07:21                                   has got (new) minima # 4: ---_4
+00:07:21   
+00:07:21  (old) conduction band =   3: ---
+00:07:21  (new) conduction band =   3      has got (new) minima # 1: ---_1
+00:07:21                                   has got (new) minima # 2: ---_2
+00:07:21                                   has got (new) minima # 3: ---_3
+00:07:21   
+00:07:21 
+00:07:21  ----------------------------------------------------------------------------
+00:07:21   New conduction band structure:
+00:07:21 
+00:07:21  ==> (new) conduction band no. =  1:
+00:07:21      (old) conduction band no. =  1:  Gamma
+00:07:21      has got (old) minima # 1:        Gamma_1  (spin degeneracy = 2)
+00:07:21  
+00:07:21  ==> (new) conduction band no. =  2:
+00:07:21      (old) conduction band no. =  2:  ---
+00:07:21      has got (old) minima # 1:          ---_1  (spin degeneracy = 2)
+00:07:21  
+00:07:21      (old) conduction band no. =  2:  ---
+00:07:21      has got (old) minima # 2:          ---_2  (spin degeneracy = 2)
+00:07:21  
+00:07:21      (old) conduction band no. =  2:  ---
+00:07:21      has got (old) minima # 3:          ---_3  (spin degeneracy = 2)
+00:07:21  
+00:07:21      (old) conduction band no. =  2:  ---
+00:07:21      has got (old) minima # 4:          ---_4  (spin degeneracy = 2)
+00:07:21  
+00:07:21  ==> (new) conduction band no. =  3:
+00:07:21      (old) conduction band no. =  3:  ---
+00:07:21      has got (old) minima # 1:          ---_1  (spin degeneracy = 2)
+00:07:21  
+00:07:21      (old) conduction band no. =  3:  ---
+00:07:21      has got (old) minima # 2:          ---_2  (spin degeneracy = 2)
+00:07:21  
+00:07:21      (old) conduction band no. =  3:  ---
+00:07:21      has got (old) minima # 3:          ---_3  (spin degeneracy = 2)
+00:07:21  
+00:07:21  Setup dielectricity done.
+00:07:21  Diagonalize for each grid point 6x6 k.p Hamiltonian (including strain).
+00:07:22  Diagonalization finished.
+00:07:22  Setup band edge done.
+00:07:22  CPU time:                          1.5 seconds (total time       442.6 seconds)
+00:07:22  SYSTEM time:                       1.5 seconds (total time       442.8 seconds)
+00:07:24  Setup of nonparabolicity done.
+00:07:24  CPU time:                          1.8 seconds (total time       444.4 seconds)
+00:07:24  SYSTEM time:                       1.8 seconds (total time       444.6 seconds)
+00:07:28  Setup of DOS done.
+00:07:28  CPU time:                          3.5 seconds (total time       447.9 seconds)
+00:07:28  SYSTEM time:                       3.5 seconds (total time       448.1 seconds)
+00:07:28   main: Check electrolyte (or graphene) done.
+00:07:28   main: Setup doping done.
+00:07:28  The directory 'C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\material_parameters/' does not exist yet.
+00:07:28  Trying to create:   'C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\material_parameters/'
+00:07:28  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\material_parameters\"'
+00:07:28  CALL system: 'mkdir "C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\material_parameters\"' finished.
+00:07:28  Writing material parameters to directory = C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\material_parameters/
+00:07:29 Error Write_AVS_Vectorfield_r: VTK format not implemented yet for DimVector =    5: file 'elastic_constants.dat' cannot be written.
+00:07:29 Error Write_AVS_Vectorfield_r: VTK format not implemented yet for DimVector =   11: file 'piezo_polarization.dat' cannot be written.
+00:07:29  Writing material parameters for material 'GaN' to file:
+00:07:29  C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\material_parameters/MaterialParameters_Material1_GaN.txt
+00:07:29  Writing material parameters for material 'In(x)Ga(1-x)N' to file:
+00:07:29  C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\material_parameters/MaterialParameters_Material2_In(x)Ga(1-x)N,x= 0.200,1-x= 0.800.txt
+00:07:29  Writing material parameters for material 'GaN' to file:
+00:07:29  C:\Users\Hu Group\Documents\nextnano\Output\0824-InGaN-QDs-fQWs-piezo-strain\material_parameters/MaterialParameters_Material3_GaN.txt
+00:07:29   main: Output of material parameters finished. ($output-material)
+00:07:29   main: Get for each grid point the intrinsic density (bulk).
+00:07:39  Time for intrinsic density (bulk):
+00:07:39  CPU time:                          9.9 seconds (total time       459.2 seconds)
+00:07:39  SYSTEM time:                       9.9 seconds (total time       459.5 seconds)
+00:07:39   
+00:07:39  Setup  pyroelectricity:
+00:07:40  Setup piezoelectricity:
+00:07:41  Special treatment at contacts: Piezoelectric polarization set to zero.
+00:07:41  Special treatment at contacts:  Pyroelectric polarization set to zero.
+00:07:41  Time for piezo (and pyro) charges:
+00:07:41  CPU time:                          1.6 seconds (total time       460.8 seconds)
+00:07:41  SYSTEM time:                       1.6 seconds (total time       461.1 seconds)
+00:07:42   Output of piezo charges done.
+00:07:42  Equilibrium calculation.
+00:07:42  Calculate built-in potential classically (no quantum mechanics).
+00:07:42   ==> nonlinear Poisson equation
+00:07:42  Using     0.000000E+00 [V] as starting value for the electrostatic potential (initial guess).
+00:07:42  Calculating starting value (initial guess) for electrostatic potential based on doping.
+00:07:42  Poisson block: Define Poisson problem.
+00:07:42  Poisson block: Setup Poisson cluster points.
+00:07:42   This subroutine probably has to be called only once.
+00:07:42   (be careful for Fermi contacts or built-in potential)
+00:07:42  Poisson block: Setup Poisson matrix.
+00:07:42  Poisson block: Set Dirichlet boundary conditions.
+00:07:42   
+00:07:42  Solving nonlinear Poisson equation with Newton method.
+00:07:42  Newton: Max. iterations (NonLinPoissonIterations) =       50
+00:07:42  Newton: Tolerance       (NonLinPoissonResidual)   =     1.00000E-08
+00:07:42  Newton-3 iteration           1            norm2 =      6.853436896E-03
+00:07:42  ILU_r preconditioner: path,maxfil          111          10
+00:07:51  cscg_R: iter,nstep,tol:      886    1000    168.044461779195E+06
+00:07:51  PCG_Kent (cscg_R): Number of matrix-vector products =         1001
+00:07:51  PCG:cscg: ierr =         1000
+00:07:51  PCG:cscg: tol  =    168044461.779195     
+00:07:51  Warning newton_corr_pois [(preconditioned) conjugate gradient]:
+00:07:51  Info, Residual =         1000   168044461.779195     
+00:07:51  You used:
+00:07:51    nonlinear-poisson-cg-lin-eq-solv = PCG_Kent
+00:07:51  Suggestion: Try other solvers, e.g.
+00:07:51    nonlinear-poisson-cg-lin-eq-solv = PCG_Kent
+00:07:51    nonlinear-poisson-cg-lin-eq-solv = cg
+00:07:51    nonlinear-poisson-cg-lin-eq-solv = lapack
+00:07:55  Warning newton3: Line search FAILED to decrease residual!
+00:07:55    residual =      3.872230087E+28
+00:07:55  Newton-3 iteration           2            norm2 =      2.693631586E+23
+00:07:56  ILU_r preconditioner: path,maxfil          111          10
+00:07:56  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:07:56  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:07:57    residual =      6.926855758E+26
+00:07:57  Newton-3 iteration           3            norm2 =      4.818514666E+21
+00:07:57  ILU_r preconditioner: path,maxfil          111          10
+00:07:57  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:07:57  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:07:58    residual =      1.239113628E+25
+00:07:58  Newton-3 iteration           4            norm2 =      8.619621079E+19
+00:07:58  ILU_r preconditioner: path,maxfil          111          10
+00:07:59  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:07:59  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:07:59    residual =      2.216593838E+23
+00:07:59  Newton-3 iteration           5            norm2 =      1.541924690E+18
+00:08:00  ILU_r preconditioner: path,maxfil          111          10
+00:08:00  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:08:00  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:08:01    residual =      3.965163651E+21
+00:08:01  Newton-3 iteration           6            norm2 =      2.758278773E+16
+00:08:01  ILU_r preconditioner: path,maxfil          111          10
+00:08:01  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:08:01  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:08:02    residual =      7.093099931E+19
+00:08:02  Newton-3 iteration           7            norm2 =      4.934158764E+14
+00:08:02  ILU_r preconditioner: path,maxfil          111          10
+00:08:03  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:08:03  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:08:03    residual =      1.268852734E+18
+00:08:03  Newton-3 iteration           8            norm2 =      8.826494616E+12
+00:08:04  ILU_r preconditioner: path,maxfil          111          10
+00:08:04  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:08:04  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:08:05    residual =      2.269791026E+16
+00:08:05  Newton-3 iteration           9            norm2 =      1.578930142E+11
+00:08:05  ILU_r preconditioner: path,maxfil          111          10
+00:08:05  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:08:05  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:08:06    residual =      4.060442405E+14
+00:08:06  Newton-3 iteration          10            norm2 =      2.824557341E+09
+00:08:06  ILU_r preconditioner: path,maxfil          111          10
+00:08:07  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:08:07  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:08:07    residual =      7.268021902E+12
+00:08:07  Newton-3 iteration          11            norm2 =      5.055839381E+07
+00:08:08  ILU_r preconditioner: path,maxfil          111          10
+00:08:08  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:08:08  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:08:09    residual =      1.932883653E+11
+00:08:09  Newton-3 iteration          12            norm2 =      1.344567948E+06
+00:08:09  ILU_r preconditioner: path,maxfil          111          10
+00:08:09  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:08:09  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:08:10    residual =      3.626414899E+10
+00:08:10  Newton-3 iteration          13            norm2 =      2.522635664E+05
+00:08:10  ILU_r preconditioner: path,maxfil          111          10
+00:08:11  cscg_R: iter,nstep,tol:        1       1      1.000000000000E-06
+00:08:11  PCG_Kent (cscg_R): Number of matrix-vector products =            2
+00:08:11    residual =      6.482137290E+08
+00:08:11  Newton-3 iteration          14            norm2 =      4.509156057E+03
+00:08:11  ILU_r preconditioner: path,maxfil          111          10
+00:08:12  cscg_R: iter,nstep,tol:        2       2      1.000000000000E-06
+00:08:12  PCG_Kent (cscg_R): Number of matrix-vector products =            3
+00:08:12    residual =      1.138027434E+07
+00:08:12  Newton-3 iteration          15            norm2 =      7.916437227E+01
+00:08:13  ILU_r preconditioner: path,maxfil          111          10
+00:08:13  cscg_R: iter,nstep,tol:        3       3      1.000000000000E-06
+00:08:13  PCG_Kent (cscg_R): Number of matrix-vector products =            4
+00:08:14    residual =      1.317996638E+05
+00:08:14  Newton-3 iteration          16            norm2 =      9.168353365E-01
+00:08:14  ILU_r preconditioner: path,maxfil          111          10
+00:08:15  cscg_R: iter,nstep,tol:        9       9      1.000000000000E-06
+00:08:15  PCG_Kent (cscg_R): Number of matrix-vector products =           10
+00:08:15    residual =      1.027281018E+04
+00:08:15  Newton-3 iteration          17            norm2 =      7.146054175E-02
+00:08:15  ILU_r preconditioner: path,maxfil          111          10
+00:08:17  cscg_R: iter,nstep,tol:       92     111    946.412363751624E-09
+00:08:17  PCG_Kent (cscg_R): Number of matrix-vector products =          111
+00:08:17    residual =      9.451314488E+03
+00:08:17  Newton-3 iteration          18            norm2 =      6.574598789E-02
+00:08:17  ILU_r preconditioner: path,maxfil          111          10
+00:08:19  cscg_R: iter,nstep,tol:      109     120      1.985804344506E-06
+00:08:19  PCG_Kent (cscg_R): Number of matrix-vector products =          121
+00:08:19    residual =      2.228923656E+03
+00:08:19  Newton-3 iteration          19            norm2 =      1.550501657E-02
+00:08:20  ILU_r preconditioner: path,maxfil          111          10
+00:08:21  cscg_R: iter,nstep,tol:      118     137      1.429255891774E-06
+00:08:21  PCG_Kent (cscg_R): Number of matrix-vector products =          138
+00:08:22    residual =      4.973766551E+02
+00:08:22  Newton-3 iteration          20            norm2 =      3.459891170E-03
+00:08:22  ILU_r preconditioner: path,maxfil          111          10
+00:08:24  cscg_R: iter,nstep,tol:      136     155      1.961999656455E-06
+00:08:24  PCG_Kent (cscg_R): Number of matrix-vector products =          156
+00:08:24    residual =      1.185409498E+02
+00:08:24  Newton-3 iteration          21            norm2 =      8.246040123E-04
+00:08:24  ILU_r preconditioner: path,maxfil          111          10
+00:08:26  cscg_R: iter,nstep,tol:      161     184    955.592881980322E-09
+00:08:26  PCG_Kent (cscg_R): Number of matrix-vector products =          184
+00:08:27    residual =      3.743369101E+01
+00:08:27  Newton-3 iteration          22            norm2 =      2.603992279E-04
+00:08:27  ILU_r preconditioner: path,maxfil          111          10
+00:08:29  cscg_R: iter,nstep,tol:      187     208     14.177348145135E-06
+00:08:29  PCG_Kent (cscg_R): Number of matrix-vector products =          209
+00:08:30    residual =      1.622928606E+01
+00:08:30  Newton-3 iteration          23            norm2 =      1.128954545E-04
+00:08:30  ILU_r preconditioner: path,maxfil          111          10
+00:08:32  cscg_R: iter,nstep,tol:      196     228      1.744677069250E-06
+00:08:32  PCG_Kent (cscg_R): Number of matrix-vector products =          229
+00:08:33    residual =      1.043887045E+01
+00:08:33  Newton-3 iteration          24            norm2 =      7.261570345E-05
+00:08:33  ILU_r preconditioner: path,maxfil          111          10
+00:08:36  cscg_R: iter,nstep,tol:      234     272      1.031871047535E-06
+00:08:36  PCG_Kent (cscg_R): Number of matrix-vector products =          273
+00:08:36    residual =      6.446275467E+00
+00:08:36  Newton-3 iteration          25            norm2 =      4.484209570E-05
+00:08:36  ILU_r preconditioner: path,maxfil          111          10
+00:08:40  cscg_R: iter,nstep,tol:      275     324      1.434026482475E-06
+00:08:40  PCG_Kent (cscg_R): Number of matrix-vector products =          325
+00:08:40    residual =      4.985820973E+00
+00:08:40  Newton-3 iteration          26            norm2 =      3.468276563E-05
+00:08:40  ILU_r preconditioner: path,maxfil          111          10
+00:08:45  cscg_R: iter,nstep,tol:      380     456      2.849714600135E-06
+00:08:45  PCG_Kent (cscg_R): Number of matrix-vector products =          457
+00:08:45    residual =      4.170382061E+00
+00:08:45  Newton-3 iteration          27            norm2 =      2.901034441E-05
+00:08:45  ILU_r preconditioner: path,maxfil          111          10
+00:08:50  cscg_R: iter,nstep,tol:      448     532      1.072819298613E-06
+00:08:50  PCG_Kent (cscg_R): Number of matrix-vector products =          533
+00:08:52    residual =      4.118656734E+00
+00:08:52  Newton-3 iteration          28            norm2 =      2.865052857E-05
+00:08:52  ILU_r preconditioner: path,maxfil          111          10
+00:08:57  cscg_R: iter,nstep,tol:      434     509      2.093641549730E-06
+00:08:57  PCG_Kent (cscg_R): Number of matrix-vector products =          510
+00:08:58    residual =      3.897108943E+00
+00:08:58  Newton-3 iteration          29            norm2 =      2.710938015E-05
+00:08:58  ILU_r preconditioner: path,maxfil          111          10
+00:09:03  cscg_R: iter,nstep,tol:      411     482      2.070771885739E-06
+00:09:03  PCG_Kent (cscg_R): Number of matrix-vector products =          483
+00:09:04    residual =      3.678936152E+00
+00:09:04  Newton-3 iteration          30            norm2 =      2.559170917E-05
+00:09:04  ILU_r preconditioner: path,maxfil          111          10
+00:09:08  cscg_R: iter,nstep,tol:      372     442      1.237741596886E-06
+00:09:08  PCG_Kent (cscg_R): Number of matrix-vector products =          443
+00:09:09    residual =      3.258560378E+00
+00:09:09  Newton-3 iteration          31            norm2 =      2.266745767E-05
+00:09:10  ILU_r preconditioner: path,maxfil          111          10
+00:09:14  cscg_R: iter,nstep,tol:      336     397     14.416722088277E-06
+00:09:14  PCG_Kent (cscg_R): Number of matrix-vector products =          398
+00:09:14    residual =      2.500610477E+00
+00:09:14  Newton-3 iteration          32            norm2 =      1.739494611E-05
+00:09:15  ILU_r preconditioner: path,maxfil          111          10
+00:09:18  cscg_R: iter,nstep,tol:      317     368      2.514549289441E-06
+00:09:18  PCG_Kent (cscg_R): Number of matrix-vector products =          369
+00:09:19    residual =      1.409020893E+00
+00:09:19  Newton-3 iteration          33            norm2 =      9.801543547E-06
+00:09:19  ILU_r preconditioner: path,maxfil          111          10
+00:09:22  cscg_R: iter,nstep,tol:      262     315      1.477315878912E-06
+00:09:22  PCG_Kent (cscg_R): Number of matrix-vector products =          316
+00:09:22    residual =      1.650018012E-01
+00:09:22  Newton-3 iteration          34            norm2 =      1.147798694E-06
+00:09:23  ILU_r preconditioner: path,maxfil          111          10
+00:09:26  cscg_R: iter,nstep,tol:      272     334      1.075389851237E-06
+00:09:26  PCG_Kent (cscg_R): Number of matrix-vector products =          335
+00:09:26    residual =      6.664821334E-03
+00:09:26  Newton-3 iteration          35            norm2 =      4.636236189E-08
+00:09:27  ILU_r preconditioner: path,maxfil          111          10
+00:09:30  cscg_R: iter,nstep,tol:      267     329      1.157968029753E-06
+00:09:30  PCG_Kent (cscg_R): Number of matrix-vector products =          330
+00:09:30    residual =      1.039966798E-05
+00:09:30  Newton-3 iteration          36            norm2 =      7.234300013E-11
+00:09:30  ILU_r preconditioner: path,maxfil          111          10
+00:09:34  cscg_R: iter,nstep,tol:      263     328      1.054851531617E-06
+00:09:34  PCG_Kent (cscg_R): Number of matrix-vector products =          329
+00:09:34    residual =      3.013161889E-11
+00:09:34  Message newton: residual < specified residual   (|| fV || <= residual_requested)
+00:09:34   Residual criteria:        residual =      3.013161889E-11, converged = T (fV)
+00:09:34  (Absolute error criteria: error_abs =      5.925332959E-05, converged = F (xV,xV_old))
+00:09:34  (Relative error criteria: error_rel =      8.036137574E-08, converged = F (xV,xV_old))
+00:09:34  (Mixed    error criteria: error_mix =      5.925332959E-05, converged = F (xV,xV_old))
+00:09:34  Time for Newton solver:
+00:09:34  CPU time:                        112.2 seconds (total time       574.2 seconds)
+00:09:34  CPU time:     1 minute, 52 seconds
+00:09:34  SYSTEM time:                     112.2 seconds (total time       574.5 seconds)
+00:09:34  SYSTEM time:  1 minute, 52 seconds
+00:09:34  Updating classical built-in potential.
+00:09:34  Updating built-in potential.
+00:09:34  Calculate intrinsic density for built-in potential.
+00:09:34  
+00:09:34  main: *********************************************************************
+00:09:34  
+00:09:34   main: flow-scheme =            0
+00:09:34   main: Do nothing.
+00:09:34   main: flow-scheme part finished.
+00:09:34   main: Output of integrated density done.
+00:09:34  Now Output...
+00:09:34  Writing out Gamma conduction band edge.
+00:09:35  Writing out hh valence band edge.
+00:09:38  Writing out densities...
+00:09:41  Writing out densities...done
+00:09:41  SYSTEM time:                       0.5 seconds (total time       581.3 seconds)
+00:09:41     (==> This is the SYSTEM time for the whole output.)
+00:09:41   Output done.
+00:09:41   
+00:09:41  -------------------------------------------------------------------------------
+00:09:41  nextnano3 - next generation 3D nano device simulator (1.9.0)
+00:09:41  -------------------------------------------------------------------------------
+00:09:41   
+00:09:41  -------------------------------------------------------------------------------
+00:09:41  Thank you for using nextnano3!
+00:09:41  Please be aware that nextnano3 is not a 'black box' tool.
+00:09:41  Understanding the underlying physics and/or the source code is a big advantage.
+00:09:41  -------------------------------------------------------------------------------
+00:09:41   
+00:09:41  Support? Feedback? Information? ==> support@nextnano.com
+00:09:41  Online Documentation            ==> http://www.nextnano.com/nextnano3
+00:09:41   
+00:09:41  -------------------------------------------------------------------------------
+00:09:41   
+00:09:41  *******************************************************************************
+00:09:41  Start time ==> Date: 2016-09-20   Time: 4:10:39 (-0400)
+00:09:41    End time ==> Date: 2016-09-20   Time: 4:20:20 (-0400)
+00:09:41  ----------------------------
+00:09:41  Total nextnano3 CPU time:   
+00:09:41  Program has used total of        580.9 seconds
+00:09:41  Total CPU time:     9 minutes, 40 seconds
+00:09:41  ----------------------------
+00:09:41  Total nextnano3 SYSTEM time:
+00:09:41  Program has used total of        581.3 seconds
+00:09:41  Total SYSTEM time:  9 minutes, 41 seconds
+00:09:41  *******************************************************************************
